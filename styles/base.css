@@ -1,11 +1,12 @@
 :root {
     --dark-blue: #1D4E89;
     --light-blue: #188FA7;
-    --green: #C3D5CD;
+    --green: #DBE6E1;
     --dark-green: #9DBBAE;
     --pink: #C38D94;
     --cream: #E2DBBE;
     --dark-cream: #B9A864;
+    --medium-green: #C3D5CD;
 
     --heading-font: "Delius Unicase", cursive;
     --paragraph-font: "Quicksand", sans-serif;
@@ -203,15 +204,15 @@ section {
 }
 
 .course-options button.current {
-    background-color: var(--light-blue);
-    border: solid 2px #1D4E89;
+    background-color: #B8EBF5;
+    border: solid 2px #188FA7;
 }
 
 .course-card .read-more {
   margin-top: 0.5em;
   background: none;
   border: none;
-  color: var(--light-blue);
+  color: var(--dark-blue);
   cursor: pointer;
   text-decoration: underline;
   font-size: 0.9em;
