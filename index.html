@@ -13,11 +13,22 @@
     <meta property="og:image" content="https://slord30.github.io/wdd231/images/conroe.webp" />
 
     <!------------------ FONTS ------------------>
+    <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+
+    <!-- Preload the font stylesheet for faster load -->
+    <link rel="preload" as="style"
         href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Meow+Script&family=Quicksand:wght@300..700&display=swap"
-        rel="stylesheet">
+        onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- Fallback for no-JS -->
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Meow+Script&family=Quicksand:wght@300..700&display=swap"
+            rel="stylesheet">
+    </noscript>
+
 
     <!------------------ STYLESHEETS ------------------>
     <link rel="stylesheet" href="styles/normalize.css">
