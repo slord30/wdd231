@@ -1,0 +1,129 @@
+/****************** COLOR SCHEME ****************/
+/* Blue (Munsell) #188FA7
+Cambridge blue #9DBBAE */
+
+/****************** GLOBAL *********************/
+* {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+/***************** HEADER ********************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end; /*puts the site title at the bottom above the border*/
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block; /*images are already inline, need to change to block*/
+    width: 100%; /*always set to 100% for the container*/
+    height: auto; /*always set to auto for the container*/
+    padding-bottom: 3px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #188FA7;
+}
+
+/***************** HAMBURGER NAVIGATION ********************/
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #188FA7;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*this font is universal and keeps the hamburger icon and the 'x' icon the same size*/
+}
+
+/*hamburger icon*/
+.hamburger::before {
+    content:"\2630";
+}
+
+/* 'x' icon*/
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/*hides the navigation on smaller screens and displays only the hamburger*/
+.navigation {
+    display: none;
+}
+
+/*shows the navigation once the hamburger has been toggled triggering the eventListener in JS*/
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0; /*ul comes with padding and margins*/
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .9rem 10px; /*enough padding at the top and bottom to be a least 44px tall, match the left and right margin to match the margin used in your logo*/
+    color: #188FA7;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+
+}
+
+.navigation {
+    color: #188FA7;
+    text-decoration: none;
+}
+
+.navigation li.current {
+    background-color: #eee;;
+}
+
+.navigation a:hover {
+    background-color: #9DBBAE;
+}
+
+h1 {
+    margin-left: 10px;
+    color:#188FA7;
+}
+
+
+/***************** FOOTER ********************/
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 6px;
+}
+
+.social img {
+    width: 25px;
+    height: 25px;
+}
+
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: solid 1px #ccc;
+    border-radius: 25px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+

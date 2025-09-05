@@ -1,0 +1,35 @@
+@media only screen and (min-width: 38rem) {
+
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+
+    /*hides the hamburder on larger screens*/
+    .hamburger {
+        display: none;
+    }
+
+    /*shows the navigation on larger screens*/
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #ddd; /*adds a border to the bottom of the navigation (menu) that extends to the whole length*/
+    }
+
+    .navigation ul {
+    display: flex;
+    }
+
+    .navigation a {
+        border: none; /*removes border from nav anchor that only extends to the length of the menu names. Can add a border to the bottom in .navigation like you see above.*/
+    }
+
+
+
+
+}
