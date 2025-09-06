@@ -1,6 +1,6 @@
 @media only screen and (min-width: 38rem) {
-        header, main, nav, footer {
-        max-width: 900px;
+        main {
+        max-width: 1200px;
         margin: 0 auto;
     }
 
@@ -25,9 +25,16 @@
         display: flex;
     }
 
+    .navigation li {
+        flex: 1;
+        text-align: center;
+        border: solid 1px #E2DBBE;
+    }
+
     .navigation a {
         border: none; /*removes border from nav anchor that only extends to the length of the menu names. Can add a border to the bottom in .navigation like you see above.*/
     }
+    
 
     .about {
         display: grid;
