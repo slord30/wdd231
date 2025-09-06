@@ -13,6 +13,9 @@
     --accent-font: "Meow Script", cursive;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 button,
 p {
@@ -119,6 +122,15 @@ header span {
 }
 
 /***************** MAIN ********************/
+main {
+    max-width: 1200px;
+    margin: 0 20px 0 20px;
+}
+
+main {
+    display: block;
+
+}
 
 h1 {
     font-family: var(--heading-font);
@@ -126,14 +138,30 @@ h1 {
     padding-left: 10px;
 }
 
-section {
+/* section {
     margin: 0 10px 0 10px;
+} */
+
+section.student-photo,
+section.about-me {
+    margin-bottom: 32px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section.about-me {
+    background-color: var(--cream);
+}
+
+section.student-photo {
+    background-color: var(--green);
 }
 
 .about-me h2,
 .student-photo h2,
 .courses h2 {
-    display: block;
+    /* display: block; */
     text-align: center;
     background-color: var(--dark-green);
     font-family: var(--accent-font);
@@ -143,17 +171,11 @@ section {
     margin-bottom: 0;
 }
 
-.about-me h2 {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
 
 .about-me p {
     display: block;
     margin-top: 0;
-    padding: 30px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    padding: 10px;
     background-color: var(--cream);
     font-family: var(--paragraph-font);
     line-height: 1.6rem;
@@ -167,10 +189,8 @@ section {
     }
 }
 
-
-.student-photo h2 {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;    
+.photo-container {
+    padding: 20px;
 }
 
 .student-photo img {
@@ -178,8 +198,7 @@ section {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;    
+    border-radius: 8px;
 }
 
 /******************** COURSES ******************/
@@ -264,9 +283,8 @@ section {
 /******************** FOOTER ******************/
 
 footer {
-    padding: 1rem 10px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 .social {
