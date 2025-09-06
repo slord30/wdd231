@@ -124,12 +124,9 @@ header span {
 /***************** MAIN ********************/
 main {
     max-width: 1200px;
-    margin: 0 20px 0 20px;
-}
-
-main {
     display: block;
-
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
 }
 
 h1 {
