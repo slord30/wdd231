@@ -105,6 +105,8 @@ header span {
 
 .navigation {
     color: var(--dark-blue);
+    font-weight: bold;
+    font-size: 1.2rem;
     text-decoration: none;
 }
 
