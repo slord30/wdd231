@@ -13,18 +13,19 @@
     --accent-font: "Meow Script", cursive;
 }
 
-* {
-    p, button {
-        font-family: var(--paragraph-font);
-    }
 
-    h1 {
-        font-family: var(--heading-font);
-    }
+button,
+p {
+    font-family: var(--paragraph-font);
+}
 
-    button, a {
-        cursor: pointer;
-    }
+h1 {
+    font-family: var(--heading-font);
+}
+
+button,
+a {
+    cursor: pointer;
 }
 
 
@@ -41,7 +42,7 @@ header {
 }
 
 header img {
-    display: block; 
+    display: block;
     max-width: 100%;
     height: auto;
     aspect-ratio: 180 / 100;
@@ -67,7 +68,7 @@ header span {
 
 /*hamburger icon*/
 .hamburger::before {
-    content:"\2630";
+    content: "\2630";
 }
 
 /* 'x' icon*/
@@ -88,13 +89,15 @@ header span {
 
 .navigation ul {
     list-style-type: none;
-    margin: 0; /*ul comes with padding and margins*/
+    margin: 0;
+    /*ul comes with padding and margins*/
     padding: 0;
 }
 
 .navigation a {
     display: block;
-    padding: .9rem 10px; /*enough padding at the top and bottom to be a least 44px tall, match the left and right margin to match the margin used in your logo*/
+    padding: .9rem 10px;
+    /*enough padding at the top and bottom to be a least 44px tall, match the left and right margin to match the margin used in your logo*/
     color: var(--dark-blue);
     text-decoration: none;
     border-bottom: solid 1px #ddd;
@@ -126,7 +129,9 @@ section {
     margin: 0 10px 0 10px;
 }
 
-.about-me h2, .student-photo h2, .courses h2 {
+.about-me h2,
+.student-photo h2,
+.courses h2 {
     display: block;
     text-align: center;
     background-color: var(--dark-green);
@@ -148,7 +153,7 @@ section {
 
 .student-photo img {
     display: block;
-    max-width:100%;
+    max-width: 100%;
     height: auto;
     margin: 0 auto;
 }
@@ -167,7 +172,7 @@ section {
     padding: 16px;
     border-radius: 10px;
     background: var(--cream);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .course-card.completed {
@@ -210,20 +215,20 @@ section {
 }
 
 .course-card .read-more {
-  margin-top: 0.5em;
-  background: none;
-  border: none;
-  color: var(--dark-blue);
-  cursor: pointer;
-  text-decoration: underline;
-  font-size: 0.9em;
-  font-weight: bold;
+    margin-top: 0.5em;
+    background: none;
+    border: none;
+    color: var(--dark-blue);
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.9em;
+    font-weight: bold;
 }
 
 .checkmark {
-  color: var(--dark-blue); 
-  font-weight: bold;
-  margin-right: .3em;
+    color: var(--dark-blue);
+    font-weight: bold;
+    margin-right: .3em;
 }
 
 /******************** FOOTER ******************/
