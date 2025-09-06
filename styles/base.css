@@ -35,7 +35,7 @@ a {
 header {
     display: grid;
     grid-template-columns: 50px auto 44px;
-    padding: 5px 0 5px 10px;
+    padding: 25px 0 25px 15px;
     align-items: end;
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
@@ -49,7 +49,7 @@ header img {
 }
 
 header span {
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: var(--dark-blue);
     font-family: var(--heading-font);
 }
@@ -141,13 +141,25 @@ section {
     margin-bottom: 0;
 }
 
+.about-me h2 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
 .about-me p {
     display: block;
     margin-top: 0;
     padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     background-color: var(--cream);
     font-family: var(--paragraph-font);
 
+}
+
+.student-photo h2 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;    
 }
 
 .student-photo img {
@@ -155,6 +167,8 @@ section {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;    
 }
 
 /******************** COURSES ******************/
@@ -196,14 +210,18 @@ section {
     margin-top: 60px;
 }
 
+.courses h2 {
+    border-radius: 5px;
+}
+
 .course-options {
     display: flex;
     gap: 8px;
 }
 
 .course-options button {
-    padding: 8px 20px;
-    margin: 5px 5px 10px 5px;
+    padding: 8px 10px;
+    margin: 15px 25px 10px 25px;
     flex: 1;
     border: solid 2px #9DBBAE;
     border-radius: 5px;
@@ -244,7 +262,9 @@ footer {
     display: flex;
     justify-content: center;
     column-gap: 6px;
-    margin-bottom: 35px;
+    margin-top: 40px;
+    padding: 20px 0 20px 0;
+    background-color: var(--dark-blue);
 }
 
 .social img {
@@ -263,7 +283,7 @@ footer {
 }
 
 .social a:hover {
-    background-color: var(--cream);
+    background-color: var(--dark-cream);
 }
 
 .info {
