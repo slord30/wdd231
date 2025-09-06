@@ -1,8 +1,5 @@
-@media only screen and (min-width: 38rem) {
-        main {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
+@media only screen and (min-width: 798px) {
+
 
     header {
         grid-template-columns: 50px auto;
@@ -39,16 +36,18 @@
     .about {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        align-items: stretch;
+        gap: 25px;
+        margin-bottom: 32px;
+        /* align-items: stretch; */
     }
 
-    .about-me {
+    /* .about-me {
         display: flex;
         flex-direction: column;
-    }
+    } */
 
-    .about-me p {
+    /* .about-me p {
         flex: 1;
         margin: 0;
-    }
+    } */
 }
