@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -105,4 +106,113 @@
 
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Lord - WDD 231 - Web Frontend Development</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development - Sarah Lord - course assignment portal">
+    <meta name="author" content="Sarah Lord">
+    <meta property="og:title" content="Conroe City Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://slord30.github.io/wdd231/" />
+    <meta property="og:image" content="https://slord30.github.io/wdd231/images/conroe.webp" />
+
+    <!------------------ FONTS ------------------>
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Preload the font stylesheet for faster load -->
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Meow+Script&family=Quicksand:wght@300..700&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- Fallback for no-JS -->
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Meow+Script&family=Quicksand:wght@300..700&display=swap"
+            rel="stylesheet">
+    </noscript>
+
+
+    <!------------------ STYLESHEETS ------------------>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+    <!------------------ JAVASCRIPT ------------------->
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/ham-menu.js" defer></script>
+    <script src="scripts/coursearray.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/star-shooting.svg" alt="logo" width="180" height="100" loading="lazy">
+        </a>
+        <span>Sarah Lord</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>HOME</h1>
+        <div class="about">
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor omnis provident, quisquam odio fuga
+                    corporis corrupti excepturi quidem, tenetur ipsum optio? Non illo id porro in architecto ea incidunt
+                    reiciendis?</p>
+            </section>
+            <section class="student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="profile-picture" loading="lazy" width="1112" height="1104">
+            </section>
+        </div>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-options">
+                <button id="all-btn" class="current">All</button>
+                <button id="cse-btn">CSE</button>
+                <button id="wdd-btn">WDD</button>
+            </div>
+            <div id="courses-container"></div>
+            <div id="total-credits"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/slord30/" target="_blank"><img src="images/linkedin-circle.svg"
+                    alt="LinkedIn" width="50" height="50"></a>
+            <a href="https://github.com/slord30/" target="_blank"><img src="images/github.svg" alt="Git Hub" width="50"
+                    height="50"></a>
+            <a href="https://www.facebook.com/sllord79" target="_blank"><img src="images/facebook.svg" alt="Facebook"
+                    width="50" height="50"></a>
+            <a href="https://www.instagram.com/sarahllord/" target="_blank"><img src="images/instagram-circle.svg"
+                    alt="Instagram" width="50" height="50"></a>
+        </div>
+        <div class="info">
+            <p>
+                <span id="currentYear"></span>
+                <span id="name"> | Sarah Lord | </span>
+                <span id="country"> USA</span>
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+
+>>>>>>> 125266fe42042289469592f98a15cff65b38ee2d
 </html>

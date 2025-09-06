@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --dark-blue: #1D4E89;
     --light-blue: #188FA7;
@@ -273,4 +274,281 @@ footer {
 
 .info p {
     margin-bottom: -.5em;
+=======
+:root {
+    --dark-blue: #1D4E89;
+    --light-blue: #188FA7;
+    --green: #DBE6E1;
+    --dark-green: #9DBBAE;
+    --pink: #C38D94;
+    --cream: #E2DBBE;
+    --dark-cream: #B9A864;
+    --medium-green: #C3D5CD;
+
+    --heading-font: "Delius Unicase", cursive;
+    --paragraph-font: "Quicksand", sans-serif;
+    --accent-font: "Meow Script", cursive;
+}
+
+
+button,
+p {
+    font-family: var(--paragraph-font);
+}
+
+h1 {
+    font-family: var(--heading-font);
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+
+
+/******************** HEADER ******************/
+
+header {
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 180 / 100;
+    padding-bottom: 2px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--dark-blue);
+    font-family: var(--heading-font);
+}
+
+/***************** HAMBURGER NAVIGATION ********************/
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--dark-blue);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*hamburger icon*/
+.hamburger::before {
+    content: "\2630";
+}
+
+/* 'x' icon*/
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/*hides the navigation on smaller screens and displays only the hamburger*/
+.navigation {
+    display: none;
+    font-family: var(--paragraph-font);
+}
+
+/*shows the navigation once the hamburger has been toggled triggering the eventListener in JS*/
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    /*ul comes with padding and margins*/
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .9rem 10px;
+    /*enough padding at the top and bottom to be a least 44px tall, match the left and right margin to match the margin used in your logo*/
+    color: var(--dark-blue);
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+
+}
+
+.navigation {
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+.navigation li.current {
+    background-color: var(--cream);
+}
+
+.navigation a:hover {
+    background-color: var(--dark-green);
+}
+
+/***************** MAIN ********************/
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--light-blue);
+    padding-left: 10px;
+}
+
+section {
+    margin: 0 10px 0 10px;
+}
+
+.about-me h2,
+.student-photo h2,
+.courses h2 {
+    display: block;
+    text-align: center;
+    background-color: var(--dark-green);
+    font-family: var(--accent-font);
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 5px;
+    margin-bottom: 0;
+}
+
+.about-me p {
+    display: block;
+    margin-top: 0;
+    padding: 10px;
+    background-color: var(--cream);
+    font-family: var(--paragraph-font);
+
+}
+
+.student-photo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/******************** COURSES ******************/
+
+#courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.course-card {
+    border: 2px solid #B9A864;
+    padding: 16px;
+    border-radius: 10px;
+    background: var(--cream);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.course-card.completed {
+    border-color: var(--dark-green);
+    background: var(--green);
+}
+
+.course-card h3 {
+    margin-top: 0;
+    font-family: var(--heading-font);
+}
+
+#total-credits {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.courses {
+    margin-top: 60px;
+}
+
+.course-options {
+    display: flex;
+    gap: 8px;
+}
+
+.course-options button {
+    padding: 8px 20px;
+    margin: 5px 5px 10px 5px;
+    flex: 1;
+    border: solid 2px #9DBBAE;
+    border-radius: 5px;
+    background-color: var(--green);
+}
+
+.course-options button.current {
+    background-color: #B8EBF5;
+    border: solid 2px #188FA7;
+}
+
+.course-card .read-more {
+    margin-top: 0.5em;
+    background: none;
+    border: none;
+    color: var(--dark-blue);
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.checkmark {
+    color: var(--dark-blue);
+    font-weight: bold;
+    margin-right: .3em;
+}
+
+/******************** FOOTER ******************/
+
+footer {
+    padding: 1rem 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 6px;
+    margin-bottom: 35px;
+}
+
+.social img {
+    width: 25px;
+    height: 25px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: solid 1px #B9A864;
+    border-radius: 25px;
+}
+
+.social a:hover {
+    background-color: var(--cream);
+}
+
+.info {
+    background-color: var(--dark-blue);
+    padding: 20px 0 20px 0;
+    color: #fff;
+}
+
+.info p {
+    margin-bottom: -.5em;
+>>>>>>> 125266fe42042289469592f98a15cff65b38ee2d
 }
