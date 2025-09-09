@@ -22,9 +22,13 @@ const displayProphets = (prophets) => {
         let fullName = document.createElement('h2');
         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
 
+        //create p element for date of birth text
+        let birthDateText = document.createElement('p');
+        birthDateText.textContent = "Date of Birth:";
+
         //create p element for date of birth
         let birthDate = document.createElement('p');
-        birthDate.textContent = `Date of Birth: ${prophet.birthdate}`;
+        birthDate.textContent = `${prophet.birthdate}`;
 
         //create p element for place of birth
         let birthPlace = document.createElement('p');
@@ -43,6 +47,7 @@ const displayProphets = (prophets) => {
 
         //Append the section(card) wit the created elements
         card.appendChild(fullName);
+        card.appendChild(birthDateText);
         card.appendChild(birthDate);
         card.appendChild(birthPlace);
         card.appendChild(portrait);
@@ -53,6 +58,6 @@ const displayProphets = (prophets) => {
 
     getProphetData();
 
-    console.log(prophet.birthdate);
+
 
 
