@@ -1,0 +1,56 @@
+:root {
+    --dark-blue: #1D4E89;
+    --light-blue: #188FA7;
+    --green: #DBE6E1;
+    --dark-green: #9DBBAE;
+    --pink: #C38D94;
+    --cream: #E2DBBE;
+    --dark-cream: #B9A864;
+    --medium-green: #C3D5CD;
+
+    --heading-font: "Delius Unicase", cursive;
+    --paragraph-font: "Quicksand", sans-serif;
+    --accent-font: "Meow Script", cursive;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+    color: var(--light-blue);
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    justify-items: center;
+}
+
+h2 {
+    color: var(--dark-blue);
+    font-family: var(--accent-font);
+    font-size: 2rem;
+    text-align: center;
+}
+
+p {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    border: solid 1px #9DBBAE;
+    background-color: #DBE6E1;
+}
+
+img {
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+}
+

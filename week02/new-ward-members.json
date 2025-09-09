@@ -1,0 +1,39 @@
+{
+    "familyName": "Lord",
+    "moveInDate": "9/08/2025",
+    "records": 6,
+    "ifVisited": true,
+    "famMembers": [
+        {
+            "name": "Brian Lord",
+            "gender": "Male",
+            "birthdate": "1977-09-10"
+        },
+        {
+            "name": "Sarah Lord",
+            "gender": "Female",
+            "birthdate": "1979-06-30"
+        },
+        {
+            "name": "Jackson Lord",
+            "gender": "Male",
+            "birthdate": "2004-03-18"
+        },
+        {
+            "name": "Connor Lord",
+            "gender": "Male",
+            "birthdate": "2006-04-08"
+        },
+        {
+            "name": "Tessa Lord",
+            "gender": "Female",
+            "birthdate": "2008-04-25"
+        },
+        {
+            "name": "Zoey Lord",
+            "gender": "Female",
+            "birthdate": "2011-08-31"
+        }
+    ]
+
+}
