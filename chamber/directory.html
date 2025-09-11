@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Lord - WDD 231 - Web Frontend Development</title>
+    <meta name="description"
+        content="WDD 231 - Web Frontend Development - Sarah Lord - Chamber of Commerce Website Project">
+    <meta name="author" content="Sarah Lord">
+    <meta property="og:title" content="Conroe City Chamber of Commerce Directory" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://slord30.github.io/wdd231/chamber.directory.html/" />
+    <meta property="og:image" content="https://slord30.github.io/wdd231/images/conroe.webp" />
+
+    <!--------FACEBOOK META TAGS-------->
+    <meta property="og:title" content="Conroe/Lake Conroe Chamber of Commerce | Conroe, Texas" />
+    <meta property="og:description"
+        content="Find community partnerships and economic success for your local business in Conroe and Lake Conroe at our chamber - YOUR chamber of choice in Montgomery County." />
+    <meta property="og:image" content="https://slord30.github.io/wdd231/images/facebook.svg" />
+    <meta property="og:url" content="https://www.facebook.com/CLCChamber" />
+
+    <!-------FONTS------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Rouge+Script&display=swap"
+        rel="stylesheet">
+
+    <!----------STYLESHEETS---------->
+
+    <!-----------SCRIPTS----------->
+
+    <link rel="icon" href="images/favicon.svg">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo_placeholder.png" alt="logo" class="logo" width="360" height="200" loading="lazy">
+            </a>
+            <h1>Conroe Chamber of Commerce</h1>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Members</h2>
+        <div class="toggle">
+            <button id="grid-btn">Grid View</button>
+            <button id="list-btn">List View</button>
+        </div>
+        <div id="members" class="grid"></div>
+    </main>
+    <footer>
+        <div class="info">
+            <p><strong>Conroe Chamber of Commerce</strong></p>
+            <p>505 West Davis Street</p>
+            <p>Conroe, Texas 77301</p>
+            <p>info@conroechambercommerce.org</p>
+            <p>(936) 756-6644</p>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/slord30/" target="_blank"><img src="images/linkedin-circle.svg"
+                    alt="LinkedIn" width="25" height="25"></a>
+            <a href="https://www.facebook.com/sllord79" target="_blank"><img src="images/facebook.svg" alt="Facebook"
+                    width="25" height="25"></a>
+            <a href="https://www.instagram.com/sarahllord/" target="_blank"><img src="images/instagram-circle.svg"
+                    alt="Instagram" width="25" height="25"></a>
+        </div>
+        <div class="date">
+            <p id="about">
+                <span id="currentYear"></span>
+                <span id="name"> | Sarah Lord | </span>
+                <span id="country"> USA</span>
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
