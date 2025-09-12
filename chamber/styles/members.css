@@ -1,6 +1,6 @@
 :root {
-    --dark-1: #ef3e36;
-    --secondary-1: #2f97c1;
+    --dark-1: #d93831;
+    --secondary-1: #277ea1;
     --dark-2: #171738;
     --secondary-2: #FDB833;
     --light: #FFD07B;
@@ -90,7 +90,7 @@ header span {
     display: block;
     padding: 0.9rem 10px;
     text-decoration: none;
-    color: var(--secondary-2);
+    color: var(--dark-2);
     text-align: center;
     cursor: pointer;
 }
@@ -113,7 +113,7 @@ main {
 
 h1.page-title {
     font-family: var(--paragraph-font);
-    color: var(--secondary-2);
+    color: var(--dark-2);
     font-size: 1.5rem;
     margin-bottom: 5rem;
 }
@@ -139,10 +139,6 @@ h2 {
 }
 
 .toggle button:hover {
-    background-color: #188FA7;
-    /* darker background on hover */
-    color: #fff;
-    /* switch text color to white */
     transform: translateY(-2px);
     /* subtle lift effect */
 }
@@ -151,12 +147,16 @@ button#grid-btn {
     background: #fff;
     border: solid 2px var(--secondary-1);
     color: var(--secondary-1);
+    font-family: var(--paragraph-font);
+    font-weight: bold;
 }
 
 button#list-btn {
     background: var(--secondary-1);
     border: solid 2px var(--secondary-1);
     color: #fff;
+    font-family: var(--paragraph-font);
+    font-weight: bold;
 }
 
 /********************** Directory ***********************/
@@ -228,7 +228,8 @@ button#list-btn {
 }
 
 .member-card a {
-    color: var(--dark-1)
+    color: var(--dark-1);
+    font-weight: bold;
 }
 
 .member-card a:hover {
