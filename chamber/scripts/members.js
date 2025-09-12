@@ -1,4 +1,4 @@
-const url = "https://slord30.github.io/wdd231/chamber/data/members.json";
+const url = "data/members.json";
 const membersContainer = document.querySelector("#members");
 const gridBtn = document.querySelector("#grid-btn");
 const listBtn = document.querySelector("#list-btn");

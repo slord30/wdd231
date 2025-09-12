@@ -5,7 +5,7 @@
       "address": "123 Innovation Way, Houston, TX 77001",
       "phone": "281-555-1023",
       "website": "https://www.technova.com",
-      "image": "technova.png",
+      "image": "technova.webp",
 
       "membership": 3,
       "description": "A software development firm specializing in AI and cloud technologies."
@@ -15,7 +15,7 @@
       "address": "456 Nature St, Austin, TX 73301",
       "phone": "512-555-2045",
       "website": "https://www.greenleaforganics.com",
-      "image": "greenleaf.png",
+      "image": "greenleaf.webp",
       "membership": 2,
       "description": "Organic food supplier with a focus on sustainable farming."
     },
@@ -24,7 +24,7 @@
       "address": "789 Ocean Ave, Miami, FL 33101",
       "phone": "305-555-8765",
       "website": "https://www.bluewavemarketing.com",
-      "image": "bluewave.png",
+      "image": "bluewave.webp",
       "membership": 1,
       "description": "Digital marketing agency specializing in SEO and social media campaigns."
     },
@@ -33,7 +33,7 @@
       "address": "1010 Peak Dr, Denver, CO 80201",
       "phone": "720-555-3344",
       "website": "https://www.summitfinancial.com",
-      "image": "summit.png",
+      "image": "summit.webp",
       "membership": 3,
       "description": "Financial planning and investment management services."
     },
@@ -42,7 +42,7 @@
       "address": "222 Knowledge Rd, Boston, MA 02101",
       "phone": "617-555-1122",
       "website": "https://www.brightpathedu.com",
-      "image": "brightpath.png",
+      "image": "brightpath.webp",
       "membership": 2,
       "description": "Online and in-person training programs for technology professionals."
     },
@@ -51,7 +51,7 @@
       "address": "333 Garden Ln, Portland, OR 97201",
       "phone": "503-555-4455",
       "website": "https://www.evergreenlandscaping.com",
-      "image": "evergreen.png",
+      "image": "evergreen.webp",
       "membership": 1,
       "description": "Residential and commercial landscaping and maintenance services."
     },
@@ -60,7 +60,7 @@
       "address": "444 Design Blvd, Chicago, IL 60601",
       "phone": "312-555-7788",
       "website": "https://www.skylinearchitecture.com",
-      "image": "skyline.png",
+      "image": "skyline.webp",
       "membership": 3,
       "description": "Award-winning architecture and urban planning firm."
     }
