@@ -28,21 +28,28 @@
         rel="stylesheet">
 
     <!----------STYLESHEETS---------->
+    <link rel="stylesheet" href="styles/members.css">
+    <link rel="stylesheet" href="styles/members-larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
 
     <!-----------SCRIPTS----------->
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 
     <link rel="icon" href="images/favicon.svg">
 </head>
 
 <body>
-    <header>
-        <div class="logo-container">
-            <a href="index.html" class="logo">
-                <img src="images/logo_placeholder.png" alt="logo" class="logo" width="360" height="200" loading="lazy">
-            </a>
-            <h1>Conroe Chamber of Commerce</h1>
-        </div>
-        <nav class="navigation">
+    <header class="logo-container">
+        <a href="index.html" class="logo">
+            <img src="images/logo_placeholder.png" alt="logo" class="logo" width="274" height="106" loading="lazy">
+        </a>
+        <span>Conroe Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+
+        <nav id="nav-bar" class="navigation">
+
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Directory</a></li>

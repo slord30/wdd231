@@ -21,12 +21,11 @@ const displayCompanies = (companies) => {
         card.classList.add("member-card");//creating a class name to the <section> element for css. ie <section class ="member-card"></section>
 
         card.innerHTML = `
-            <h2>${company.name}</h2>
             <img src="images/${company.image}" alt="logo of ${company.name}" loading="lazy" width="200" height="200">
-            <p><strong>Address:</strong> ${company.address}</p>
-            <p><strong>Phone:</strong> ${company.phone}</p>
+            <h3>${company.name}</h3>
+            <p>${company.address}</p>
+            <p>${company.phone}</p>
             <p><a href="${company.website}" target="_blank">Visit Website</a></p>
-            <p><strong>Membership Level:</strong> ${company.membership}</p>
         `;
 
         membersContainer.appendChild(card);
