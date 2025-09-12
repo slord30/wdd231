@@ -106,7 +106,14 @@ header span {
 
 /***************** MAIN ********************/
 main {
-    margin: 80px 40px 60px 40px;
+    margin: 40px 40px 60px 40px;
+}
+
+h1.page-title {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-2);
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
 }
 
 h2 {
@@ -121,7 +128,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .toggle button {
