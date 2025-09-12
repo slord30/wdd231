@@ -90,6 +90,7 @@ header span {
     padding: 0.9rem 10px;
     text-decoration: none;
     color: var(--secondary-2);
+    text-align: center;
     cursor: pointer;
 }
 
@@ -252,6 +253,8 @@ footer p {
 }
 
 .social img {
+    width: 25px;
+    height: auto;
     margin: 0 8px 0 8px;
 }
 

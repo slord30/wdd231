@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 962px) {
 
     :root {
         --dark-1: #ef3e36;
@@ -80,6 +80,11 @@
         gap: 16px;
         margin: 2rem;
         padding: 2rem;
+    }
+
+    .social img {
+        width: 40px;
+        height: auto;
     }
 
 
