@@ -71,6 +71,16 @@
         margin-top: 20px;
     }
 
+    #members.list .member-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+
     /********************* FOOTER **********************/
     footer {
         display: grid;

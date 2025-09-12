@@ -20,23 +20,40 @@
     <meta property="og:image" content="https://slord30.github.io/wdd231/images/facebook.svg" />
     <meta property="og:url" content="https://www.facebook.com/CLCChamber" />
 
-    <!-------FONTS------->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Rouge+Script&display=swap"
-        rel="stylesheet">
+<!-------FONTS------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!----------STYLESHEETS---------->
-    <link rel="stylesheet" href="styles/members.css">
-    <link rel="stylesheet" href="styles/members-medium.css">
-    <link rel="stylesheet" href="styles/members-larger.css">
-    <link rel="stylesheet" href="styles/normalize.css">
+<!-- Preload + stylesheet swap for Google Fonts -->
+<link rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Rouge+Script&display=swap"
+      as="style"
+      onload="this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Rouge+Script&display=swap">
+</noscript>
 
-    <!-----------SCRIPTS----------->
-    <script src="scripts/members.js" defer></script>
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
+<!----------STYLESHEETS---------->
+<!-- Normalize first (should load quickly, very small) -->
+<link rel="preload" href="styles/normalize.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="styles/normalize.css"></noscript>
+
+<!-- Members styles: preload + non-blocking load -->
+<link rel="preload" href="styles/members.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="styles/members.css"></noscript>
+
+<link rel="preload" href="styles/members-medium.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="styles/members-medium.css"></noscript>
+
+<link rel="preload" href="styles/members-larger.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="styles/members-larger.css"></noscript>
+
+<!-----------SCRIPTS----------->
+<!-- ✅ already defer → won’t block render -->
+<script src="scripts/members.js" defer></script>
+<script src="scripts/date.js" defer></script>
+<script src="scripts/navigation.js" defer></script>
 
     <link rel="icon" href="images/favicon.svg">
 </head>
@@ -80,9 +97,9 @@
             <a href="https://www.linkedin.com/in/slord30/" target="_blank"><img src="images/linkedin-circle.svg"
                     alt="LinkedIn" width="50" height="50"></a>
             <a href="https://www.facebook.com/sllord79" target="_blank"><img src="images/facebook.svg" alt="Facebook"
-                    width="25" height="25"></a>
+                    width="50" height="50"></a>
             <a href="https://www.instagram.com/sarahllord/" target="_blank"><img src="images/instagram-circle.svg"
-                    alt="Instagram" width="25" height="25"></a>
+                    alt="Instagram" width="50" height="50"></a>
         </div>
         <div class="date">
             <p id="about">
