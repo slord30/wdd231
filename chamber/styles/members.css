@@ -161,13 +161,22 @@ button#list-btn {
 
 /********************** Directory ***********************/
 
+/*** CONTAINER STYLES ***/
 #members {
     display: grid;
     gap: 16px;
     margin-top: 20px;
 }
 
-/**************** styles just the list view****************/
+/*** GRID VIEW ***/
+#members.grid .member-card {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    padding: 16px;
+}
+
+
+
+/*** LIST VIEW ***/
 #members.list {
     display: block;
     max-width: 1200px;
@@ -183,16 +192,15 @@ button#list-btn {
 
 /* Make images smaller in list view */
 #members.list .member-card img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    margin: 0 auto;
-    margin-bottom: 15px;
+    display: none;
 }
 
 #members.list .member-card h3 {
     margin: 0;
 }
+
+
+
 
 /*makes every other section (or business) a different color*/
 #members.list section.member-card:nth-child(even) {
@@ -203,7 +211,6 @@ button#list-btn {
 #members.grid .member-card {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
     padding: 16px;
-
 }
 
 .member-card img {
