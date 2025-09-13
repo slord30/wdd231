@@ -258,12 +258,13 @@ footer p {
 .social {
     text-align: center;
     margin: 20px 0;
+    border-bottom: solid 1px #fff;
 }
 
 .social img {
     width: 25px;
     height: 25px;
-    margin: 0 8px;
+    margin: 5px 8px 15px 0;
 }
 
 footer .date {
