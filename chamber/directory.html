@@ -26,15 +26,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100..900&family=Figtree:wght@300..900&family=Rouge+Script&display=swap&display=swap" rel="stylesheet">
 
-  <!-- Inline critical CSS (normalize.css is tiny) -->
-  <style>
-    /* Normalize.css basic reset (inline critical part) */
-    html { line-height: 1.15; -webkit-text-size-adjust: 100%; }
-    body { margin: 0; }
-    main { display: block; }
-    h1 { font-size: 2em; margin: 0.67em 0; }
-    /* ... add a few key rules from normalize.css if needed */
-  </style>
 
   <!-- Stylesheets -->
   <link rel="preload" href="styles/members.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -43,8 +34,9 @@
     <link rel="stylesheet" href="styles/members.css">
     <link rel="stylesheet" href="styles/members-larger.css" media="(min-width: 768px)">
   </noscript>
+  <link rel="stylesheet" href="styles/normalize.css">
 
-  <!-- Scripts (already deferred, good 👍) -->
+  <!-- Scripts -->
   <script src="scripts/members.js" defer></script>
   <script src="scripts/date.js" defer></script>
   <script src="scripts/navigation.js" defer></script>
