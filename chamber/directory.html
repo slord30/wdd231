@@ -2,43 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarah Lord - WDD 231 - Web Frontend Development</title>
-    <meta name="description"
-        content="WDD 231 - Web Frontend Development - Sarah Lord - Chamber of Commerce Website Project">
-    <meta name="author" content="Sarah Lord">
-    <meta property="og:title" content="Conroe City Chamber of Commerce Directory" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://slord30.github.io/wdd231/chamber.directory.html/" />
-    <meta property="og:image" content="https://slord30.github.io/wdd231/images/conroe.webp" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarah Lord - WDD 231 - Web Frontend Development</title>
+  <meta name="description" content="WDD 231 - Web Frontend Development - Sarah Lord - Chamber of Commerce Website Project">
+  <meta name="author" content="Sarah Lord">
 
-    <!--------FACEBOOK META TAGS-------->
-    <meta property="og:title" content="Conroe/Lake Conroe Chamber of Commerce | Conroe, Texas" />
-    <meta property="og:description"
+  <!-- Open Graph -->
+  <meta property="og:title" content="Conroe City Chamber of Commerce Directory" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://slord30.github.io/wdd231/chamber.directory.html/" />
+  <meta property="og:image" content="https://slord30.github.io/wdd231/images/conroe.webp" />
+  <meta property="og:description"
         content="Find community partnerships and economic success for your local business in Conroe and Lake Conroe at our chamber - YOUR chamber of choice in Montgomery County." />
-    <meta property="og:image" content="https://slord30.github.io/wdd231/images/facebook.svg" />
-    <meta property="og:url" content="https://www.facebook.com/CLCChamber" />
 
-    <!-------FONTS------->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bitter:wght@100..900&family=Figtree:wght@300..900&family=Rouge+Script&display=swap"
-        rel="stylesheet">
+  <!-- Facebook Meta -->
+  <meta property="og:title" content="Conroe/Lake Conroe Chamber of Commerce | Conroe, Texas" />
+  <meta property="og:image" content="https://slord30.github.io/wdd231/images/facebook.svg" />
+  <meta property="og:url" content="https://www.facebook.com/CLCChamber" />
 
-    <!----------STYLESHEETS---------->
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100..900&family=Figtree:wght@300..900&family=Rouge+Script&display=swap&display=swap" rel="stylesheet">
+
+  <!-- Inline critical CSS (normalize.css is tiny) -->
+  <style>
+    /* Normalize.css basic reset (inline critical part) */
+    html { line-height: 1.15; -webkit-text-size-adjust: 100%; }
+    body { margin: 0; }
+    main { display: block; }
+    h1 { font-size: 2em; margin: 0.67em 0; }
+    /* ... add a few key rules from normalize.css if needed */
+  </style>
+
+  <!-- Stylesheets -->
+  <link rel="preload" href="styles/members.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="styles/members-larger.css" as="style" onload="this.onload=null;this.rel='stylesheet'" media="(min-width: 768px)">
+  <noscript>
     <link rel="stylesheet" href="styles/members.css">
-    <link rel="stylesheet" href="styles/members-larger.css">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/members-larger.css" media="(min-width: 768px)">
+  </noscript>
 
-    <!-----------SCRIPTS----------->
-    <script src="scripts/members.js" defer></script>
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
+  <!-- Scripts (already deferred, good 👍) -->
+  <script src="scripts/members.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
 
-    <link rel="icon" href="images/favicon.svg">
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.svg">
 </head>
+
 
 <body>
     <header class="logo-container">
