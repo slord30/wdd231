@@ -28,66 +28,21 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bitter:wght@100..900&family=Figtree:wght@300..900&family=Rouge+Script&display=swap&display=swap"
         rel="stylesheet">
-    <style>
-        :root {
-            --dark-2: #171738;
-            --paragraph-font: "Figtree", serif;
-            --heading-font: "Bitter", serif;
-        }
 
-        body {
-            margin: 0;
-            font-family: var(--paragraph-font);
-            background: #fff;
-            color: var(--dark-2);
-        }
-
-        header {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            align-items: center;
-            margin: 2rem;
-            column-gap: 1rem;
-            border-bottom: solid 1px #ddd;
-        }
-
-        .logo img {
-            max-width: 150px;
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        h1.page-title {
-            font-family: var(--paragraph-font);
-            color: var(--dark-2);
-            font-size: 1.5rem;
-            margin: 2rem 0;
-        }
-    </style>
-
-    <!-- ✅ Preload + async load main stylesheet -->
-    <link rel="preload" href="styles/members.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="styles/members.css">
-    </noscript>
-
-    <!-- ✅ Larger breakpoint stylesheet loads conditionally -->
-    <link rel="stylesheet" href="styles/members-larger.css" media="(min-width: 768px)">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/members.css">
+    <link rel="stylesheet" href="styles/members-larger.css">
 
     <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
     <script src="scripts/members.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
 
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.svg">
 </head>
-
-
 <body>
     <header class="logo-container">
         <a href="index.html" class="logo">
@@ -96,9 +51,7 @@
         </a>
         <span>Conroe Chamber of Commerce</span>
         <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
-
         <nav id="nav-bar" class="navigation">
-
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="https://slord30.github.io/wdd231/chamber/directory.html">Directory</a></li>
@@ -141,7 +94,5 @@
             <p id="lastModified"></p>
         </div>
     </footer>
-
 </body>
-
 </html>
