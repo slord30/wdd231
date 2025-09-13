@@ -187,6 +187,7 @@ button#list-btn {
     height: 80px;
     object-fit: contain;
     margin: 0 auto;
+    margin-bottom: 15px;
 }
 
 #members.list .member-card h3 {
