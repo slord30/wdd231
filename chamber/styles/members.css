@@ -242,6 +242,8 @@ button#list-btn {
 footer {
     background-color: var(--dark-2);
     padding: 40px;
+    min-height: 220px;
+    box-sizing: border-box;
 }
 
 
@@ -250,16 +252,20 @@ footer p {
     color: #fff;
     margin-bottom: 10px;
     text-align: center;
+    line-height: 1.5;
 }
 
 .social {
     text-align: center;
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
 }
 
 .social img {
     width: 25px;
-    height: auto;
-    aspect-ratio: 1/1;
-    margin: 0 8px 0 8px;
+    height: 25px;
+    margin: 0 8px;
+}
+
+footer .date {
+    min-height: 1.5em; /* reserve height for JS content */
 }
