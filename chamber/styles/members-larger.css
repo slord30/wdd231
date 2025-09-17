@@ -13,7 +13,6 @@
         --paragraph-font: "Figtree", serif;
     }
 
-
     header {
         display: grid;
         grid-template-columns: 200px auto auto;
@@ -64,6 +63,15 @@
         border-radius: 6px;
     }
 
+    main {
+    display: block;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+ 
     #members {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -90,7 +98,6 @@
         justify-items: center;
         align-items: center;
         gap: 16px;
-        margin: 2rem;
         padding: 2rem;
     }
 
