@@ -1,0 +1,40 @@
+@media only screen and (min-width: 962px) {
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero h1 {
+        grid-row: 3 / 4;
+        grid-column: 1 / 4;
+        font-size: 35px;
+    }
+
+    .sections {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .social img {
+        width: 30px;
+        height: auto;
+    }
+
+}
+
+/*************** FOR REALLY SMALL SCREENS ****************/
+
+@media only screen and (max-width: 450px) {
+    .hero h1 {
+        font-size: 1rem;
+        grid-row: 2 / 4;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+}
