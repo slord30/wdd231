@@ -51,9 +51,12 @@ function displayCurrentWeather(data) {
 
     const iconImg = data.weather[0].icon
     const iconsrc = `https://openweathermap.org/img/wn/${iconImg}@2x.png`;
-    myIcon.setAttribute('src', iconsrc);
-    myIcon.setAttribute('alt', data.weather[0].description); 
-
+    
+    myIcon.setAttribute('src', iconsrc); //assign src attribute
+    myIcon.setAttribute('alt', data.weather[0].description); //assign alt attribute
+    
+    //reveal src after it is assigned
+    myIcon.hidden = false;
 }
 
 // ============ Fetch 3-Day Forecast ================
