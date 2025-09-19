@@ -55,8 +55,6 @@ function displayCurrentWeather(data) {
     myIcon.setAttribute('src', iconsrc); //assign src attribute
     myIcon.setAttribute('alt', data.weather[0].description); //assign alt attribute
     
-    //reveal src after it is assigned
-    myIcon.hidden = false;
 }
 
 // ============ Fetch 3-Day Forecast ================
