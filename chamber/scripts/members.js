@@ -20,13 +20,35 @@ const displayCompanies = (companies) => {
         let card = document.createElement("section")
         card.classList.add("member-card");//creating a class name to the <section> element for css. ie <section class ="member-card"></section>
 
+        // create <picture> for responsive images
+        const picture = document.createElement("picture");
+
+        // large screen 
+        const sourceLarge = document.createElement("source");
+        sourceLarge.setAttribute("media", "(min-width: 1024px)");
+        sourceLarge.setAttribute("srcset", company.imageLarge);
+
+        // small screen
+        const img = document.createElement("img");
+        img.setAttribute("src", company.imageSmall);
+        img.setAttribute("alt", `Logo of${company.name}`);
+        img.setAttribute("loading", "lazy,");
+        img.setAttribute("width", "100");
+        img.setAttribute("height", "100");
+
+        // append sources and img to picture
+        picture.appendChild(sourceLarge);
+        picture.appendChild(img);
+
+        // build the card content
         card.innerHTML = `
-            <img src="images/${company.image}" alt="logo of ${company.name}" loading="lazy" width="200" height="200">
             <h3>${company.name}</h3>
             <p>${company.address}</p>
             <p>${company.phone}</p>
             <p><a href="${company.website}" target="_blank">Visit Website</a></p>
         `;
+
+        // prepend picture to the top of the card
 
         membersContainer.appendChild(card);
     });

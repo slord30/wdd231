@@ -30,14 +30,19 @@ function displayCompanies(members) {
 
         const card = document.createElement("div");
         card.classList.add("spotlight-card");
-        card.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name} logo" class="spotlight-logo">
-            <h3>${member.name}</h3>
-            <p><strong>Membership:</strong> ${member.membership === 3 ? "Gold" : "Silver"}</p>
-            <p>${member.address}</p>
-            <p>${member.phone}</p>
-            <p><a href="${member.website}" target="_blank">Visit Website</a></p>
-        `;
+
+    // use <picture> for responsive images
+    card.innerHTML = `
+    <picture class="spotlight-logo">
+        <source srcset="images/${member.imageSmall}" media="(max-width: 600px)">
+        <img src="images/${member.imageLarge}" alt="${member.name} logo">
+    </picture>
+    <h3>${member.name}</h3>
+    <p><strong>Membership:</strong> ${member.membership === 3 ? "Gold" : "Silver"}</p>
+    <p>${member.address}</p>
+    <p>${member.phone}</p>
+    <p><a href="${member.website}" target="_blank">Visit Website</a></p>
+    `;
 
         container.appendChild(card);
         spotlightSection.appendChild(container);
