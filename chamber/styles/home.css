@@ -39,12 +39,12 @@ h1.page-title {
 }
 
 /************** HERO BANNER *************/
-.hero {
+/* .hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.hero img {
+.hero picture {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -59,35 +59,66 @@ h1.page-title {
     padding-left: 5rem;
     color: #fff;
     font-size: 25px;
+} */
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 10vh; /* adjust height as needed */
+    overflow: hidden;
 }
 
+/* Hero Image */
+.hero picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cover the hero area */
+    display: block;
+}
+
+/* Content overlay */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+/* Heading */
+.hero-content h1 {
+    font-size: clamp(1.8rem, 4vw, 3rem); /* responsive font size */
+    margin-bottom: 1rem;
+    word-wrap: break-word; /* wraps long text */
+}
+
+/* Join Button */
 .join-btn {
-    grid-row: 4 / 5;
-    grid-column: 2 / 3;
     display: inline-block;
-    background-color: var(--dark-1);   /* button background */
-    color: #fff;                 /* text color */
-    padding: 0.75rem 0;     /* space inside */
-    border: none;                /* remove link border */
-    border-radius: 6px;          /* rounded corners */
-    font-size: 1rem;
+    background-color: var(--dark-1);
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-radius: 6px;
     font-family: var(--paragraph-font);
     font-weight: bold;
-    text-decoration: none;       /* remove underline */
-    text-align: center;
+    text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    white-space: normal; /* allows button to text to wrap */
 }
 
 .join-btn:hover {
-    background-color: var(--secondary-2);   /* darker on hover */
-    transform: translateY(-2px); /* little lift effect */
+    background-color: var(--secondary-2);
+    transform: translateY(-2px);
 }
 
 .join-btn:active {
-    background-color: var(--dark-2);   /* pressed color */
-    transform: translateY(0);    /* reset lift */
+    background-color: var(--dark-2);
+    transform: translateY(0);
 }
+
 
 
 

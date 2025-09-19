@@ -20,20 +20,13 @@
         width: 30px;
         height: auto;
     }
-
-    .join-btn {
-        grid-column: 1 / 2;
-        margin: 0 5rem;
-    }
-
 }
 
 /*************** FOR REALLY SMALL SCREENS ****************/
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 532px) {
     .hero h1 {
         font-size: 1rem;
-        grid-row: 2 / 4;
     }
 
     h2 {
