@@ -20,7 +20,7 @@
 
 
 /************** MAIN ****************/
-h1 {
+h1, h3 {
     font-family: var(--heading-font);
 }
 
@@ -76,14 +76,112 @@ button {
 
 /************** SECTIONS ***************/
 section {
-    margin: 2rem;
+    margin: 2rem 1rem;
     background-color: var(--light);
-    padding: 10rem 0;
 }
 
 section h2 {
     text-align: center;
 }
+
+/************* CURRENT EVENTS **************/
+
+section#current-events h2 {
+    background-color: var(--dark-2);
+    color: #fff;
+    padding: 1rem;
+}
+
+/************* CURRENT WEATHER ************/
+
+.weather-card {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 2rem;
+    padding-bottom: 1rem;
+}
+
+section#weather h2 {
+    background-color: var(--dark-2);
+    color: #fff;
+    padding: 1rem;
+}
+
+p#temperature {
+    margin-bottom: 10px;
+}
+
+p#description {
+    margin-bottom: 7px;
+}
+
+p#high, p#low, p#humidity {
+    margin-bottom: 4px;
+}
+
+/**************** 3-DAY FORECAST *****************/
+
+div#forecast-3day {
+    text-align: center;
+    margin: 1rem;
+    padding-bottom: 1rem;
+}
+
+.forecast-day {
+    margin: .5rem;
+}
+
+div.forecast-card h2 {
+    background-color: var(--dark-2);
+    color: #fff;
+    padding: 1rem;
+}
+
+section#spotlights h2 {
+    background-color: var(--dark-1);
+    color: #fff;
+    padding: 1rem;
+}
+
+/*************** SPOTLIGHTS ***************/
+
+div.spotlight-container {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+div.spotlight-container h3 {
+    margin: 10px 0;
+}
+
+div.spotlight-container a {
+    color: var(--dark-1);
+    font-weight: bold;
+    font-family: var(--paragraph-font);
+}
+
+div.spotlight-card img {
+    width: 100px;
+    height: 100px;
+}
+
+#spotlight-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.spotlight-container {
+    flex: 1 1 300px; /* responsive width */
+}
+
+
+
+
 
 
 
