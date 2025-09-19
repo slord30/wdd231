@@ -21,6 +21,10 @@
         height: auto;
     }
 
+    .join-btn {
+        margin: 0 2.5rem;
+    }
+
 }
 
 /*************** FOR REALLY SMALL SCREENS ****************/
@@ -34,4 +38,5 @@
     h2 {
         font-size: 1.75rem;
     }
+
 }
