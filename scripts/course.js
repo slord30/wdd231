@@ -102,7 +102,7 @@ function renderCourses(courseArray) {
             ? `<span class="checkmark">✓ </span>${course.subject}`
             : course.subject;
 
-       
+
         //shorten description to 100 max characters
         const shortDesc = course.description.length > 25
             ? course.description.substring(0, 25) + "..."
@@ -115,11 +115,6 @@ function renderCourses(courseArray) {
             ${course.description.length > 25 ? '<button class="read-more">Read More</button>' : ''}
             <p><strong>Tech:</strong> ${course.technology.join(', ')}</p>`;
 
-        // card.innerHTML = `
-        // <h3>${course.subject} ${course.number}: ${course.title}</h3>
-        // <p><strong>Credits:</strong> ${course.credits}</p>
-        // <p>${course.description}</p>
-        // <p><strong>Tech:</strong> ${course.technology.join(', ')}</p>`;
 
         container.appendChild(card);
 

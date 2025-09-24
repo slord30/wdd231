@@ -279,6 +279,30 @@ section.student-photo {
     margin-right: .3em;
 }
 
+/******************* MODAL CONTAINER ***************/
+
+dialog {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: #188FA7;
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid black;
+}
+
 /******************** FOOTER ******************/
 
 footer {
