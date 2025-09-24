@@ -246,3 +246,33 @@ dialog::backdrop {
     align-items: center;
     justify-content: center;
 }
+
+/*********** THANK YOU PAGE FORM SUBMISSION ***********/
+
+div#submission {
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    padding: 2rem;
+    border: solid 2px #000;
+    background-color: var(--light);
+}
+
+h3.details {
+    font-family: var(--heading-font);
+    margin-bottom: 2rem;
+}
+
+#details {
+    font-family: var(--paragraph-font);
+}
+
+#details p {
+    margin-top: .5rem;
+}
+
+p#date {
+    margin: 2rem 0;
+    border-top: solid 1px #000;
+    padding-top: .75rem;
+}
