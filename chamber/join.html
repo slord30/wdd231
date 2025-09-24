@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conroe Chamber of Commerce</title>
+    <meta name="description"
+        content="Find community partnerships and economic success for your local business in Conroe and Lake Conroe at our chamber.">
+    <meta name="author" content="Sarah Lord">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Conroe City Chamber of Commerce Directory" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://slord30.github.io/wdd231/chamber.directory.html/" />
+    <meta property="og:image" content="https://slord30.github.io/wdd231/images/conroe.webp" />
+    <meta property="og:description"
+        content="Find community partnerships and economic success for your local business in Conroe and Lake Conroe at our chamber - YOUR chamber of choice in Montgomery County." />
+
+    <!-- Facebook Meta -->
+    <meta property="og:title" content="Conroe/Lake Conroe Chamber of Commerce | Conroe, Texas" />
+    <meta property="og:image" content="https://slord30.github.io/wdd231/images/facebook.svg" />
+    <meta property="og:url" content="https://www.facebook.com/CLCChamber" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:wght@100..900&family=Figtree:wght@300..900&family=Rouge+Script&display=swap&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer type="module"></script>
+    <script src="scripts/date.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.svg">
+</head>
+
+<body>
+    <header class="logo-container">
+        <a href="index.html" class="logo">
+            <img src="images/logo_placeholder.png" alt="Conroe Chamber of Commerce logo" class="logo" width="274"
+                height="106" fetchpriority="high">
+        </a>
+        <span>Conroe Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="https://slord30.github.io/wdd231/chamber/index.html">Home</a></li>
+                <li><a href="https://slord30.github.io/wdd231/chamber/directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="page-title">Join</h1>
+        <h2>Conroe Chamber of Commerce Membership Signup</h2>
+        <section class="form">
+            <!-- Form -->
+            <div class="form-wrap">
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+                        <legend>Applicant Name</legend>
+                        <div class="two-rows">
+                            <label>First Name
+                                <input type="text" name="firstName" required autocomplete="given-name"
+                                    title="Applicant's first name">
+                            </label>
+                            <label>Last Name
+                                <input type="text" name="lastName" require autocomplete="family-name"
+                                    title="Applicant's last name">
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Organization & Contact</legend>
+                        <div class="two-rows">
+                            <label>Organization Title
+                                <input type="text" name="orgTitle" autocomplete="organization-title" title="Your title"
+                                    pattern="^[A-Za-z\s-]{7,}$" placeholder="e.g., Program Manager">
+                            </label>
+                            <label>Email Address
+                                <input type="email" name="email" required autocomplete="email"
+                                    placeholder="example@business.org" title="Applicant email">
+                            </label>
+                        </div>
+                        <div class="two-rows">
+                            <label>Mobile Phone
+                                <input type="tel" name="phone" required autocomplete="tel"
+                                    title="Applicant phone number">
+                            </label>
+                            <label>Business / Organization Name
+                                <input type="text" name="organization" required autocomplete="organization"
+                                    title="Organization name">
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Membership Details</legend>
+                        <label>Membership Level
+                            <select name="membershipLevel" required title="Select membership level">
+                                <option value="" disabled selected>Choose a level</option>
+                                <option value="NP">NP Membership - $0</option>
+                                <option value="Bronze">Bronze Membership - $50</option>
+                                <option value="Silver">Silver Membership - $150</option>
+                                <option value="Gold">Gold Membership - $450</option>
+                            </select>
+                        </label>
+                        <label>Organization Description
+                            <textarea name="orgDescription" title="Describe your organization"></textarea>
+                        </label>
+                    </fieldset>
+
+                    <input type="hidden" name="timestamp" id="formTimestamp">
+                    <input type="submit" value="Become a Member">
+                </form>
+            </div>
+
+            <!-- Membership Cards-->
+            <aside class="cards">
+                <div class="card" data-level="NP">
+                    <h4>Non Profit Membership Level</h4>
+                    <a href="#" class="info-link" data-level="NP">Learn more</a>
+                </div>
+                <div class="card" data-level="Bronze">
+                    <h4>Bronze Membership Level</h4>
+                    <a href="#" class="info-link" data-level="Bronze">Learn more</a>
+                </div>
+                <div class="card" data-level="Silver">
+                    <h4>Silver Membership Level</h4>
+                    <a href="#" class="info-link" data-level="Silver">Learn more</a>
+                </div>
+                <div class="card" data-level="Gold">
+                    <h4>Gold Membership Level</h4>
+                    <a href="#" class="info-link" data-level="Gold">Learn more</a>
+                </div>
+            </aside>
+        </section>
+
+        <!-- Dialogs -->
+        <dialog id="dialogNP">
+            <div class="dialogBox">
+                <button class="closeBtn">X</button>
+                <h3>NP Membership Benefits</h3>
+                <p><strong>Cost: </strong>$0</p>
+                <p><strong>Benefits: </strong>Event listings, volunteer support, included in nonprofit directory.</p>
+            </div>
+        </dialog>
+        <dialog id="dialogBronze">
+            <div class="dialogBox">
+                <button class="closeBtn">X</button>
+                <h3>Bronze Membership Benefits</h3>
+                <p><strong>Cost: </strong>$50</p>
+                <p><strong>Benefits: </strong>Basic listing, newsletters, event discounts.</p>
+            </div>
+        </dialog>
+        <dialog id="dialogSilver">
+            <div class="dialogBox">
+                <button class="closeBtn">X</button>
+                <h3>Silver Membership Benefits</h3>
+                <p><strong>Cost: </strong>$150</p>
+                <p><strong>Benefits: </strong>Bronze benefits plus spotlight advertising, training worshops.</p>
+            </div>
+        </dialog>
+        <dialog id="dialogGold">
+            <div class="dialogBox">
+                <button class="closeBtn">X</button>
+                <h3>Gold Membership Benefits</h3>
+                <p><strong>Cost: </strong>$450</p>
+                <p><strong>Benefits: </strong>All Silver benefits plus VIP events, premium placement.</p>
+            </div>
+        </dialog>
+    </main>
+    <footer>
+        <div class="info">
+            <p><strong>Conroe Chamber of Commerce</strong></p>
+            <p>505 West Davis Street</p>
+            <p>Conroe, Texas 77301</p>
+            <p>info@conroechambercommerce.org</p>
+            <p>(936) 756-6644</p>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/slord30/" target="_blank"><img src="images/linkedin-circle.svg"
+                    alt="LinkedIn" width="512" height="512" loading="lazy"></a>
+            <a href="https://www.facebook.com/sllord79" target="_blank"><img src="images/facebook.svg" alt="Facebook"
+                    width="512" height="512" loading="lazy"></a>
+            <a href="https://www.instagram.com/sarahllord/" target="_blank"><img src="images/instagram-circle.svg"
+                    alt="Instagram" width="512" height="512" loading="lazy"></a>
+        </div>
+        <div class="date">
+            <p id="about">
+                <span id="currentYear"></span>
+                <span id="name"> | Sarah Lord | </span>
+                <span id="country"> USA</span>
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
