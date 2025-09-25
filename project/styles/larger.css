@@ -1,0 +1,53 @@
+/*Desktop and up*/
+/*for screens 1200px or wider*/
+
+@media screen and (min-width: 1200px) {
+
+    /**************home banner*****************/
+
+    nav a .logo {
+        max-width: 30%;
+        /* Ensure the image is responsive */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin-left: 2rem;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        text-align: center;
+        padding: .75rem;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 180px;
+    }
+
+    .content h2 {
+        font-size: 120px;
+        margin-top: 8rem;
+    }
+
+    #about h1 {
+        font-size: 6rem;
+    }
+
+    #about h2 {
+        font-size: 3.5rem;
+    }
+
+    #contact h1 {
+        font-size: 6rem;
+    }
+
+
+}

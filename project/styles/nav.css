@@ -1,0 +1,68 @@
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navigation a {
+    display: none;
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+} 
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    /*add white border around menu when hovering over it*/
+    border: 2px solid #fff;
+    padding: 8px;
+}
+
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "✖";
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}

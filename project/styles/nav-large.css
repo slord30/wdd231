@@ -1,0 +1,24 @@
+@media screen and (min-width: 1200px) {
+
+    
+    button#menu {
+        display: none;
+    }   
+
+        .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        text-align: center;
+        padding: .75rem;
+    }
+    
+  
+    .navigation a {
+        display: flex;
+        font-size: 1rem;
+    }
+}

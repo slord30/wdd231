@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code & Vector | Web & Graphic Design</title>
+    <meta name="description" content="website for Code & Vector">
+    <meta name="author" content="Sarah Lord">
+    <meta property="og:title" content="Code & Vector" />
+    <meta property="og:type" content="website" />
+    <meta propery="og:url" content="https://code&vector.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Meow+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/nav-large.css">
+
+    <!-- Scripts -->
+    <script defer src="scripts/nav.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+    <section id="home"> <!--section id=home to scroll to home section when selected in menu-->
+        <div id="hero">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="images/smoke.mp4" type="video/mp4">
+            </video>
+            <nav id="nav">
+                <a aria-label="click to go to home page" href="index.html">
+                    <img src="images/logo-white.png" alt="Code and Vector Logo" aria-hidden="true" class="logo"
+                        width="2131" height="595" decoding="async" alt="logo" loading="lazy">
+                </a>
+                <button type="button" id="menu" title="Title"></button>
+                <ul class="navigation">
+                    <li><a href="index.html">HOME</a></li> <!--href = #home to scroll to home when clicked in menu-->
+                    <li><a href="#about">ABOUT</a></li>
+                    <!--href = #about to scroll to about section when clicked in menu-->
+                    <li><a href="#contact">CONTACT</a></li>
+                    <!--href = #contact to scroll to about contact when clicked in menu-->
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <h2>CREATIVE</h2>
+                <h1>DESIGNER</h1>
+                <a href="#">Quote</a>
+            </div>
+        </div>
+    </section>
+    <main>
+        <article id="about">
+            <div class="about-wrapper">
+                <video autoplay loop muted plays-inline preload="auto" class="about-video">
+                    <!--comment this out if you don't want smoke video-->
+                    <source
+                        src="https://video.wixstatic.com/video/d47472_58cce06729c54ccb935886c4b3647274/1080p/mp4/file.mp4"
+                        type="video/mp4">
+                </video>
+                <div class="about-overlay"></div>
+                <div class="welcome">
+                    <h1>Welcome!</h1>
+                    <h2>I'm Sarah Lord</h2>
+                    <a href="about.html">More About Me</a>
+                </div>
+            </div>
+        </article>
+        <div class="wave-container">
+            <article id="contact"> <!--section id=contact to scroll to contact section when selected in menu-->
+                <h1>Reach Out</h1>
+                <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+                    <path class="wave" fill="#ffffff66" d="M0,50 C300,150 900,-50 1200,50 L1200,100 L0,100Z"></path>
+                </svg>
+
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="email">
+            <a href="mailto:codeandvector@gmail.com" target="blank"><img src="images/email.svg" alt="Email" width="35"
+                    class="em"></a>
+        </div>
+        <div class="social">
+            <a href="#" target="blank"><img src="images/linkedin.svg" alt="LinedIn" width="35" class="li"></a>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,344 @@
+/*default for mobile*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #501f61;
+    --primary-accent: #1D1735;
+    --secondary: #EB0A00;
+    --secondary-accent: #EB0797;
+    --text-color: #000;
+
+    --font-script: 'Meow Script', cursive;
+    --font-serif: 'Quicksand', sans-serif;
+    --font-serif-alt: 'Poppins', sans-serif;
+    --font-heading: 'Delius Unicase', cursive;
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+/*stops the ability to scroll on website*/
+html, body {
+  overflow: hidden;
+}
+
+
+#nav {
+    position: fixed;
+    top: 0;
+    z-index: 1030;
+    font-family: var(--font-serif);
+    /* to prevent the navbar getting covered up by other content */
+}
+
+/**************home banner*****************/
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a .logo {
+    display: flex;
+    /* Use flexbox for centering the image */
+    justify-content: flex-start;
+    /* Align image to the left */
+    margin-left: .5rem;
+}
+
+nav a .logo {
+    max-width: 50%;
+    /* Ensure the image is responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: 1rem;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* nav a .logo {
+    width: 150px;
+} */
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    /*add white border around menu when hovering over it*/
+    border: 2px solid #fff;
+    padding: 8px;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 70px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+    font-family: var(--font-serif-alt);
+}
+
+.content h2 {
+    font-size: 50px;
+    font-family: var(--font-serif-alt);
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+    /*transition from solid to outline when hovering at a slower rate*/
+}
+
+.content h1:hover {
+    /*hover over h1 word and the letters become outlined and the transparent*/
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.content h2:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    font-family: var(--font-serif-alt);
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.content a:hover {
+    background-color: #fff;
+    font-weight: 600;
+    color: var(--primary-accent);
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ration: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (::-ms-expand-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+
+/************sections**************/
+#home,
+#about,
+#contact {
+    height: 100vh;
+}
+
+
+
+/********************about section******************/
+#about {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.about-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.about-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+#about h2 {
+    color: var(--primary);
+    font-size: 2rem;
+    font-family: var(--font-serif-alt);
+    -webkit-text-stroke: 1px #fff;
+}
+
+
+
+/*This is what gives the smoke color*/
+.about-overlay {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #B67332, #B64A26, #A23A5C, #4E1950, #999999, #FFFFFF);
+    mix-blend-mode: color;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.welcome {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: right;
+    padding-top: 40rem;
+    padding-right: 8%;
+    transform: translateY(-50%);
+}
+
+#about h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    font-family: var(--font-serif-alt);
+    /*create animation for "welcome"*/
+    -webkit-text-stroke: 1px #fff;
+    /*can remove this is you want text to disappear entirely*/
+    color: transparent;
+    background-image: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -700px, 0;
+    animation: backcolor 5s linear infinite alternate;
+}
+
+.welcome a {
+    display: inline-block;
+    font-family: var(--font-serif-alt);
+    color: white;
+    background-color: var(--secondary);
+    text-decoration: none;
+    border: 2px solid var(--secondary);
+    padding: 14px 50px;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.welcome a:hover {
+    background-color: var(--secondary-accent);
+    font-weight: 600;
+    color: var(--primary-accent);
+    border: var(--secondary-accent);
+}
+
+
+@keyframes backcolor {
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/*end of animation css*/
+
+
+
+/****************contact section******************/
+#contact {
+    width: 100%;
+    background: linear-gradient(to top, #EB4607, #8500EB);
+    /* sky to water */
+}
+
+article#contact {
+    padding-top: 15rem;
+    text-align: left;
+}
+
+#contact h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    padding-left: 8%;
+    font-family: var(--font-serif);
+    font-weight: 400;
+}
+
+.wave-container {
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+}
+
+.wave-container svg {
+    position: relative;
+    display: block;
+    width: 200%;
+    height: 100%;
+}
+
+.wave-container .wave {
+    animation: wave-animation 10s linear infinite alternate;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/***************FOOTER******************/
+
+footer {
+    display: inline-flex;
+}
+
