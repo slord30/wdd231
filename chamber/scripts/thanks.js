@@ -20,7 +20,6 @@
 // <p><strong>Submitted On: </strong>${myInfo.get('timestamp')}</p>
 // `;
 
-// thankyou.js
 window.addEventListener("DOMContentLoaded", () => {
     const myInfo = new URLSearchParams(window.location.search);
 
@@ -36,3 +35,5 @@ window.addEventListener("DOMContentLoaded", () => {
         <p id='date'><strong>Submitted On:</strong> ${new Date().toLocaleString()}</p>
     `;
 });
+
+
