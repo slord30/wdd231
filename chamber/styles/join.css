@@ -150,6 +150,9 @@ input[type="submit"]:hover {
     flex-direction: column;
     opacity: 0;
     transform: translateY(16px);
+}
+
+.card.animate {
     animation: cardIn 700ms cubic-bezier(.16, .8, .36, 1) forwards;
 }
 
