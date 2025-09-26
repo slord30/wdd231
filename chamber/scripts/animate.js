@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const cards = document.querySelectorAll(".cards .card");
 
-    if (window.matchMedia("(max-width: 768px)").matches) {
+    if (window.matchMedia("(max-width: 900px)").matches) {
         // Small screens → animate on scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
