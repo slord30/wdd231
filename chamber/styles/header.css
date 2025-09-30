@@ -89,7 +89,8 @@ header span {
 }
 
 .navigation li.current {
-    background-color: var(--light);
+    border: solid 3px var(--secondary-2);
+    border-radius: 10px;
 }
 
 
