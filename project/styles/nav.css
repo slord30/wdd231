@@ -43,6 +43,11 @@ nav ul li a:hover {
     padding: 8px;
 }
 
+ul.navigation a.current {
+    /*wayfinding*/
+    border-bottom: solid 3px #fff;
+}
+
 /* small view navigation */
 #menu {
     font-size: 1.5rem;

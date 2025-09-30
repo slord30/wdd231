@@ -14,15 +14,20 @@
     --secondary-accent: #EB0797;
     --text-color: #000;
 
-    --font-script: 'Meow Script', cursive;
-    --font-serif: 'Quicksand', sans-serif;
-    --font-serif-alt: 'Poppins', sans-serif;
-    --font-heading: 'Delius Unicase', cursive;
+    --font-cursive: 'Meow Script', cursive;
+    --font-text: 'Quicksand', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
 }
 
-/* html {
-    scroll-behavior: smooth;
-} */
+/*************** MAIN ***************/
+h1, h2 {
+    font-family: var(--font-heading);
+}
+
+a, p, nav {
+    font-family: var(--font-text);
+}
+
 
 /*stops the ability to scroll on website*/
 html, body {
@@ -34,7 +39,6 @@ html, body {
     position: fixed;
     top: 0;
     z-index: 1030;
-    font-family: var(--font-serif);
     /* to prevent the navbar getting covered up by other content */
 }
 
@@ -109,12 +113,10 @@ nav ul li a:hover {
     color: #fff;
     font-weight: 600;
     transition: 0.5s;
-    font-family: var(--font-serif-alt);
 }
 
 .content h2 {
     font-size: 50px;
-    font-family: var(--font-serif-alt);
     color: #fff;
     font-weight: 600;
     transition: 0.5s;
@@ -137,7 +139,6 @@ nav ul li a:hover {
     display: inline-block;
     color: #fff;
     font-size: 24px;
-    font-family: var(--font-serif-alt);
     border: 2px solid #fff;
     padding: 14px 70px;
     border-radius: 50px;
@@ -210,7 +211,6 @@ nav ul li a:hover {
 #about h2 {
     color: var(--primary);
     font-size: 2rem;
-    font-family: var(--font-serif-alt);
     -webkit-text-stroke: 1px #fff;
 }
 
@@ -243,7 +243,6 @@ nav ul li a:hover {
 #about h1 {
     color: #fff;
     font-size: 3.5rem;
-    font-family: var(--font-serif-alt);
     /*create animation for "welcome"*/
     -webkit-text-stroke: 1px #fff;
     /*can remove this is you want text to disappear entirely*/
@@ -257,7 +256,6 @@ nav ul li a:hover {
 
 .welcome a {
     display: inline-block;
-    font-family: var(--font-serif-alt);
     color: white;
     background-color: var(--secondary);
     text-decoration: none;
@@ -301,7 +299,6 @@ article#contact {
     color: #fff;
     font-size: 2.5rem;
     padding-left: 8%;
-    font-family: var(--font-serif);
     font-weight: 400;
 }
 
