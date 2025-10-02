@@ -1,0 +1,48 @@
+/*************** MEDIUM SCREENS ************/
+@media only screen and (min-width: 641px) {
+
+    #cards {
+        width: 600px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    #cards section {
+
+        width: 100%;
+       
+        grid-template-areas:
+            "name name"
+            "image description"
+            "image address"
+            "button button";
+
+        grid-template-columns: auto 1fr;
+    }
+
+    #cards section img {
+        display: block;
+        width: 300px;
+        height: auto;
+        margin-left: 10px;
+        box-shadow: 3px 3px 6px;
+        border-radius: 8px;
+        transition: transform 0.3s ease; 
+    }
+
+    #cards section img:hover {
+        transform: scale(1.03);
+    }
+
+    #cards section figure {
+        grid-row: 2 / 4;
+    }
+
+    #cards section p, address {
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+
+
+}
