@@ -41,6 +41,7 @@
     <!-- Scripts -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/discover.js" defer type="module"></script>
+    <script src="scripts/visit.js" defer></script>
     <script src="scripts/date.js" defer></script>
 
     <!-- Favicon -->
@@ -64,6 +65,10 @@
             </ul>
         </nav>
     </header>
+    <div id="visitOverlay" class="visit-overlay">
+        <p id="message"></p>
+        <button id="closeBtn" aria-label="Close button">X</button>
+    </div>
     <main>
         <h1 class="page-title">Discover</h1>
         <div id="cards"></div>
