@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarah Lord | Web & Graphic Design</title>
-    <meta name="description" content="website for Code & Vector">
+    <meta name="description" content="website for Sarah Lord Graphic & Web Design">
     <meta name="author" content="Sarah Lord">
-    <meta name="description"
-        content="Website for Sarah Lord Web & Grapic Design. A place showcasing designs and offer information.">
+
     <meta property="og:title" content="Sarah Lord - Web & Graphic Design" />
     <meta property="og:type" content="website" />
-    <meta propery="og:url" content="https://code&vector.com" />
+    <meta propery="og:url" content="https://slord30.github.io/wdd231/project/index.html" />
+    <meta property="og:description"
+        content="Welcome to Sarah Lord Web & Graphic Design! I create thoughtful, modern websites and graphics that reflect your brand’s story and connect with your audience." />
+    <meta propety="og:image" content="https://slord30/github.io/wdd231/project/images/logo-color.png" />
+
+    <!-- Google Fonts -->    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -33,39 +38,41 @@
 </head>
 
 <body>
-    <section id="home"> <!--section id=home to scroll to home section when selected in menu-->
+    <header id="home"> <!--header id=home to scroll to home section when selected in menu-->
+        <nav id="nav">
+            <a aria-label="click to go to home page" href="index.html">
+                <img src="images/logo-white.png" alt="Code and Vector Logo" class="logo" width="2131" height="595"
+                    decoding="async" loading="lazy">
+            </a>
+            <button type="button" id="menu" title="Title"></button>
+            <ul class="navigation">
+                <li><a href="#home" class="current">HOME</a></li>
+                <!--href = #home to scroll to home when clicked in menu-->
+                <li><a href="#about">ABOUT</a></li> <!--href = #about to scroll to about section when clicked in menu-->
+                <li><a href="#contact">CONTACT</a></li>
+                <!--href = #contact to scroll to contact section when clicked in menu-->
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <!--href = #portfolio to scroll to portfolio section when clicked in menu-->
+            </ul>
+        </nav>
+
+        <!-- Hero section -->
         <div id="hero">
-            <video autoplay loop muted plays-inline class="back-video">
+            <video autoplay loop muted playsinline class="back-video">
                 <source src="images/smoke.mp4" type="video/mp4">
             </video>
-            <nav id="nav">
-                <a aria-label="click to go to home page" href="index.html">
-                    <img src="images/logo-white.png" alt="Code and Vector Logo" aria-hidden="true" class="logo"
-                        width="2131" height="595" decoding="async" alt="logo" loading="lazy">
-                </a>
-                <button type="button" id="menu" title="Title"></button>
-                <ul class="navigation">
-                    <li><a href="index.html" class="current">HOME</a></li>
-                    <!--href = #home to scroll to home when clicked in menu-->
-                    <li><a href="#about" class="current">ABOUT</a></li>
-                    <!--href = #about to scroll to about section when clicked in menu-->
-                    <li><a href="#contact">CONTACT</a></li>
-                    <!--href = #contact to scroll to about contact when clicked in menu-->
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                </ul>
-            </nav>
             <div class="content">
                 <h2>CREATIVE</h2>
                 <h1>DESIGNER</h1>
                 <a href="#">Quote</a>
             </div>
         </div>
-    </section>
+    </header>
+
     <main>
-        <article id="about">
+        <article id="about"> <!--article id=about to scroll to about section when selected in menu-->
             <div class="about-wrapper">
-                <video autoplay loop muted plays-inline preload="auto" class="about-video">
-                    <!--comment this out if you don't want smoke video-->
+                <video autoplay loop muted playsinline preload="auto" class="about-video">
                     <source
                         src="https://video.wixstatic.com/video/d47472_58cce06729c54ccb935886c4b3647274/1080p/mp4/file.mp4"
                         type="video/mp4">
@@ -78,29 +85,30 @@
                 </div>
             </div>
         </article>
+
         <div class="wave-container">
-            <article id="contact"> <!--section id=contact to scroll to contact section when selected in menu-->
+            <article id="contact"> <!--article id=contact to scroll to contact section when selected in menu-->
                 <h1>Reach Out</h1>
                 <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
                     <path class="wave" fill="#ffffff66" d="M0,50 C300,150 900,-50 1200,50 L1200,100 L0,100Z"></path>
                 </svg>
-
             </article>
         </div>
     </main>
+
     <footer>
         <div class="email">
-            <a href="mailto:codeandvector@gmail.com" target="blank"><img src="images/email.svg" alt="Email" width="35"
-                    class="em"></a>
+            <a href="mailto:codeandvector@gmail.com" target="_blank">
+                <img src="images/email.svg" alt="Email" width="35" class="em">
+            </a>
         </div>
         <div class="social">
-            <a href="#" target="blank"><img src="images/linkedin.svg" alt="LinedIn" width="35" class="li"></a>
+            <a href="#" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="35" class="li">
+            </a>
         </div>
     </footer>
-
-
-
-
 </body>
+
 
 </html>
