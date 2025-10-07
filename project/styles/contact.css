@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #501f61;
+    --primary-accent: #1D1735;
+    --secondary: #EB0A00;
+    --secondary-accent: #EB0797;
+    --text-color: #000;
+
+    --font-cursive: 'Meow Script', cursive;
+    --font-text: 'Quicksand', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+}
+
+
+body {
+    /* background-color: #000; */
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+nav {
+    background-color: var(--secondary-accent);
+}
+
+h1 {
+    color: #fff;
+    margin-top: 125px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}

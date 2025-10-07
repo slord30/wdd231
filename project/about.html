@@ -2,56 +2,71 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <meta name="description" content="website for Code & Vector">
+    <title>Sarah Lord | Web & Graphic Design</title>
+    <meta name="description" content="Website for Sarah Lord Web & Graphic Design">
     <meta name="author" content="Sarah Lord">
-    <meta property="og:title" content="Code & Vector" />
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Sarah Lord Designs - Web & Graphic Design" />
     <meta property="og:type" content="website" />
-    <meta propery="og:url" content="https://code&vector.com" />
+    <meta property="og:url" content="https://slord30.github.io/wdd231/project/index.html" />
+    <meta property="og:description"
+        content="Welcome to Sarah Lord Designs! I create thoughtful, modern websites and graphics that reflect your brand’s story and connect with your audience." />
+    <meta property="og:image" content="https://slord30.github.io/wdd231/project/images/logo-color.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Sarah Lord Web & Graphic Design logo" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Meow+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/about.css">
-    <link rel="stylesheet" href="styles/about-medium.css">
-    <link rel="stylesheet" href="styles/about-large.css">
-    <link rel="stylesheet" href="styles/nav.css">
-    <link rel="stylesheet" href="styles/nav-large.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <!-- Scripts -->
     <script defer src="scripts/nav.js"></script>
+    <script defer src="scripts/footer.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
 
 </head>
 
 <body>
-    <header id="about-header">
+    <header id="home"> <!--header id=home to scroll to home section when selected in menu-->
         <nav id="nav">
             <a aria-label="click to go to home page" href="index.html">
-                <img src="images/cv-logo-light.png" aria-hidden="true" class="logo" width="2131" height="595"
-                    decoding="async" alt="logo" loading="lazy">
+                <img src="images/logo-white.png" alt="Sarah Lord Designs" class="logo" width="2131" height="595"
+                    decoding="async" loading="lazy">
             </a>
             <button type="button" id="menu" title="Title"></button>
             <ul class="navigation">
-                <li><a href="#home">HOME</a></li> <!--href = #home to scroll to home when clicked in menu-->
-                <li><a href="#about" class="current">ABOUT</a></li>
-                <!--href = #about to scroll to about section when clicked in menu-->
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html" class="current">ABOUT</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-                <!--href = #contact to scroll to about contact when clicked in menu-->
                 <li><a href="#portfolio">PORTFOLIO</a></li>
             </ul>
         </nav>
+    </header>
+    <main id="main">
         <div class="page-title">
             <h1>My Journey to Design</h1>
         </div>
-    </header>
-    <main id="main">
         <section id="sidebyside" class="sidebyside">
             <div class="container">
-                <img src="images/couple.jpg" alt="Picture of me" aria-hidden="true" class="photo" height="450"
+                <img src="images/couple.webp" alt="Picture of me" aria-hidden="true" class="photo" width="450" height="675"
                     loading="lazy">
-            </div> 
-            <div class="container2"> 
-                <h2 class="title">Where it all began</h2>
+            </div>
+            <div class="container2">
+                <h2 class="title">- Where it all began -</h2>
                 <p class="about">
                     My journey into web design began over 20 years ago. At the time, my husband had just graduated
                     from dental school and was preparing to start his own practice. With a limited budget and big
@@ -71,6 +86,31 @@
             </div>
         </section>
     </main>
+    <footer>
+        <div class="info">
+            <p><strong>Sarah Lord Designs</strong></p>
+            <p>(801) 573-0983</p>
+            <a href="mailto:codeandvector@gmail.com" aria-label="Send an email to Code and Vector">
+                <img src="images/email.svg" alt="Email Sarah Lord" width="35" class="em">
+            </a>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/slord30/" target="_blank"><img src="images/linkedin-circle.svg"
+                    alt="LinkedIn" width="512" height="512" loading="lazy"></a>
+            <a href="https://www.facebook.com/sllord79" target="_blank"><img src="images/facebook.svg" alt="Facebook"
+                    width="512" height="512" loading="lazy"></a>
+            <a href="https://www.instagram.com/sarahllord/" target="_blank"><img src="images/instagram-circle.svg"
+                    alt="Instagram" width="512" height="512" loading="lazy"></a>
+        </div>
+        <div class="date">
+            <p id="copyright">
+                <span id="currentYear"></span>
+                <span id="name"> | Sarah Lord | </span>
+                <span id="country"> USA</span>
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 
 </body>
 

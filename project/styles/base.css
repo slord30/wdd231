@@ -30,17 +30,10 @@ a, p, nav {
 
 
 /*stops the ability to scroll on website*/
-html, body {
+/* html, body {
   overflow: hidden;
-}
+} */
 
-
-#nav {
-    position: fixed;
-    top: 0;
-    z-index: 1030;
-    /* to prevent the navbar getting covered up by other content */
-}
 
 /**************home banner*****************/
 #hero {
@@ -52,56 +45,6 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-nav a .logo {
-    display: flex;
-    /* Use flexbox for centering the image */
-    justify-content: flex-start;
-    /* Align image to the left */
-    margin-left: .5rem;
-}
-
-nav a .logo {
-    max-width: 50%;
-    /* Ensure the image is responsive */
-    height: auto;
-    /* Maintain aspect ratio */
-    margin-bottom: 1rem;
-}
-
-nav {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* nav a .logo {
-    width: 150px;
-} */
-
-nav ul li {
-    list-style: none;
-    display: inline;
-    margin-left: 40px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 17px;
-    transition: 0.5s;
-}
-
-nav ul li a:hover {
-    /*add white border around menu when hovering over it*/
-    border: 2px solid #fff;
-    padding: 8px;
 }
 
 .content {
@@ -336,6 +279,6 @@ article#contact {
 /***************FOOTER******************/
 
 footer {
-    display: inline-flex;
+    
 }
 

@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #501f61;
+    --primary-accent: #1D1735;
+    --secondary: #EB0A00;
+    --secondary-accent: #EB0797;
+    --text-color: #000;
+
+    --font-cursive: 'Meow Script', cursive;
+    --font-text: 'Quicksand', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #000;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical centering */
+    align-items: center; /* horizontal centering */
+    min-height: 80vh; /* fill most of the viewport height */
+    text-align: center;
+}
+
+
+nav {
+    background-color: var(--secondary-accent);
+}
+
+h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+footer {
+    background-color: #fff;
+}

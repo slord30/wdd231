@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #501f61;
+    --primary-accent: #1D1735;
+    --secondary: #EB0A00;
+    --secondary-accent: #EB0797;
+    --text-color: #000;
+
+    --font-cursive: 'Meow Script', cursive;
+    --font-text: 'Quicksand', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+}
+
+/******* LOGO ************/
+
+nav a .logo {
+    display: flex;
+    /* Use flexbox for centering the image */
+    justify-content: flex-start;
+    /* Align image to the left */
+    margin-left: .5rem;
+}
+
+nav a .logo {
+    display: block;                /* Ensures margins work correctly */
+    max-width: 150px;              /* Prevents it from getting too large */
+    width: 100%;                   /* Scales with parent container */
+    height: auto;                  /* Maintains aspect ratio */
+    margin: 0 auto 1rem;           /* Centers the logo and adds bottom spacing */
+    object-fit: contain;           /* Keeps full logo visible if container changes */
+}
+
+@media (min-width: 768px) {
+    nav a .logo {
+        max-width: 200px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav a .logo {
+        max-width: 250px;
+    }
+}
+
+/*************** NAVIGATION ******************/
+
+#nav {
+    position: fixed;
+    top: 0;
+    z-index: 1030;
+    /* to prevent the navbar getting covered up by other content */
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navigation a {
+    display: none;
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+} 
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    /*add white border around menu when hovering over it*/
+    border: 2px solid #fff;
+    padding: 8px;
+}
+
+ul.navigation a.current {
+    /*wayfinding*/
+    border-bottom: solid 3px #fff;
+}
+
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "✖";
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+/**************** LARGER VIEW **************/
+
+@media screen and (min-width: 768px) {
+
+    
+    button#menu {
+        display: none;
+    }   
+
+        .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        text-align: center;
+        padding: .75rem;
+    }
+    
+  
+    .navigation a {
+        display: flex;
+        font-size: 1rem;
+    }
+}
+
