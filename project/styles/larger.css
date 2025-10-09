@@ -29,11 +29,11 @@
     }
 
     h1#top {
-        font-size: 4.5rem;
+        font-size: 5.5rem;
     }
 
     .content h1 {
-        font-size: 7rem;
+        font-size: 7.5rem;
     }
 
     .content h2 {
@@ -71,22 +71,5 @@
         /* Maintain aspect ratio */
         margin-left: 2rem;
     }
-
-    h1#top {
-        font-size: 4.5rem;
-    }
-
-    .content h1 {
-        font-size: 7rem;
-    }
-
-    #about h1 {
-        font-size: 5rem;
-    }
-
-    #about h2 {
-        font-size: 6rem;
-    }
-
 
 }
