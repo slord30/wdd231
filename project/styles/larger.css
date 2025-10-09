@@ -20,6 +20,14 @@
         font-size: 7.5rem;
     }
 
+    #about h1 {
+        font-size: 6rem;
+    }
+
+    #about h2 {
+        font-size: 3rem;
+    }
+
 }
 
 /*Desktop and up*/
@@ -65,11 +73,11 @@
         margin-top: 8rem;
     }
 
-    #about h2 {
+    #about h1 {
         font-size: 6rem;
     }
 
-    #about h3 {
+    #about h2 {
         font-size: 3rem;
     }
 
