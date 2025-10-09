@@ -1,7 +1,31 @@
+/*tablet and up*/
+/*for screens 768px or wider*/
+
+
+@media screen and (min-width: 768px) {
+
+    nav a .logo {
+        max-width: 30%;
+        /* Ensure the image is responsive */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin-left: 2rem;
+    }
+
+    h1#top {
+        font-size: 5.5rem;
+    }
+
+    .content h1 {
+        font-size: 7.5rem;
+    }
+
+}
+
 /*Desktop and up*/
 /*for screens 1200px or wider*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
 
     /**************home banner*****************/
 
@@ -29,11 +53,11 @@
     }
 
     h1#top {
-        font-size: 5.5rem;
+        font-size: 8rem;
     }
 
     .content h1 {
-        font-size: 7.5rem;
+        font-size: 12rem;
     }
 
     .content h2 {
@@ -51,25 +75,9 @@
 
     #spotlight-cards {
         width: 1200px;
- 
+
         margin: 0 auto;
     }
 
-
-}
-
-/*tablet and up*/
-/*for screens 768px or wider*/
-
-
-@media screen and (min-width: 768px) {
-
-    nav a .logo {
-        max-width: 30%;
-        /* Ensure the image is responsive */
-        height: auto;
-        /* Maintain aspect ratio */
-        margin-left: 2rem;
-    }
 
 }
