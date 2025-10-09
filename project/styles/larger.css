@@ -28,8 +28,12 @@
         text-align: center;
     }
 
+    h1#top {
+        font-size: 4.5rem;
+    }
+
     .content h1 {
-        font-size: 180px;
+        font-size: 7rem;
     }
 
     .content h2 {
@@ -37,15 +41,50 @@
         margin-top: 8rem;
     }
 
-    #about h1 {
+    #about h2 {
         font-size: 6rem;
     }
 
-    #about h2 {
-        font-size: 3.5rem;
+    #about h3 {
+        font-size: 3rem;
     }
 
-    #contact h1 {
+    #spotlight-cards {
+        width: 1200px;
+ 
+        margin: 0 auto;
+    }
+
+
+}
+
+/*tablet and up*/
+/*for screens 768px or wider*/
+
+
+@media screen and (min-width: 768px) {
+
+    nav a .logo {
+        max-width: 30%;
+        /* Ensure the image is responsive */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin-left: 2rem;
+    }
+
+    h1#top {
+        font-size: 4.5rem;
+    }
+
+    .content h1 {
+        font-size: 7rem;
+    }
+
+    #about h1 {
+        font-size: 5rem;
+    }
+
+    #about h2 {
         font-size: 6rem;
     }
 

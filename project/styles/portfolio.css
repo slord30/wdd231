@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #501f61;
+    --primary-accent: #1D1735;
+    --secondary:#EB0A00;
+    --secondary-accent: #EB0797;
+    --text-color: #000;
+
+    --font-cursive: 'Meow Script', cursive;
+    --font-text: 'Quicksand', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+}
+
+
+body {
+    background-color: #000;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+nav {
+    background-color: var(--primary);
+}
+
+h1 {
+    color: #fff;
+    margin-top: 125px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+    font-family: var(--font-cursive);
+    font-size: 2rem;
+}
+
+h3, p {
+    font-family: var(--font-text);
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+
+/* ----------------- Portfolio Thumbnails ----------------- */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img.thumbnail {
+    width: 100%;
+    height: 150px; /* thumbnail height */
+    object-fit: cover; /* maintain aspect ratio and cover container */
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 0.75rem;
+}
+
+/* ----------------- Modal ----------------- */
+#imageModal {
+    display: none; /* hidden by default */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+#imageModal img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 12px;
+}
+
+#imageModal .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Caption */
+#caption {
+    color: #fff;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: var(--font-text);
+    font-weight: bold;
+}
+
+
+
+
+
+@media only screen and (min-width: 962px) {
+
+    h1 {
+        text-align: left;
+        margin-left: 25px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}

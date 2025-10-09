@@ -28,13 +28,13 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
 
     <!-- Scripts -->
     <script defer src="scripts/nav.js"></script>
+    <script defer src="scripts/spotlight.js"></script>
     <script defer src="scripts/footer.js"></script>
 
     <!-- Favicon -->
@@ -51,12 +51,13 @@
             </a>
             <button type="button" id="menu" title="Title"></button>
             <ul class="navigation">
-                <li><a href="#home" class="current">HOME</a></li>
+                <li><a href="index.html" class="current">HOME</a></li>
                 <!--href = #home to scroll to home when clicked in menu-->
-                <li><a href="#about">ABOUT</a></li> <!--href = #about to scroll to about section when clicked in menu-->
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <!--href = #about to scroll to about section when clicked in menu-->
+                <li><a href="contact.html">CONTACT</a></li>
                 <!--href = #contact to scroll to contact section when clicked in menu-->
-                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
                 <!--href = #portfolio to scroll to portfolio section when clicked in menu-->
             </ul>
         </nav>
@@ -67,9 +68,9 @@
                 <source src="images/smoke.mp4" type="video/mp4">
             </video>
             <div class="content">
-                <h2>CREATIVE</h2>
+                <h1 id="top">CREATIVE</h1>
                 <h1>DESIGNER</h1>
-                <a href="#">Quote</a>
+                <a href="contact.html">Quote</a>
             </div>
         </div>
     </header>
@@ -84,21 +85,25 @@
                 </video>
                 <div class="about-overlay"></div>
                 <div class="welcome">
-                    <h1>Welcome!</h1>
-                    <h2>I'm Sarah Lord</h2>
+                    <h2>Welcome!</h2>
+                    <h3>I'm Sarah Lord</h3>
                     <a href="about.html">More About Me</a>
                 </div>
             </div>
         </article>
 
-        <div class="wave-container">
-            <article id="contact"> <!--article id=contact to scroll to contact section when selected in menu-->
-                <h1>Reach Out</h1>
-                <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
-                    <path class="wave" fill="#ffffff66" d="M0,50 C300,150 900,-50 1200,50 L1200,100 L0,100Z"></path>
-                </svg>
-            </article>
-        </div>
+        <section id="spotlight">
+            <h2>Design Spotlights</h2>
+
+            <div id="spotlight-cards"></div>
+
+            <!-- Optional wave to blend into footer -->
+            <svg viewBox="0 0 1200 100" preserveAspectRatio="none" class="wave-svg">
+                <path d="M0,50 C300,150 900,-50 1200,50 L1200,100 L0,100Z"></path>
+            </svg>
+        </section>
+
+
     </main>
 
     <footer>

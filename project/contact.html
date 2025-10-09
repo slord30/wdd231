@@ -52,12 +52,13 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="contact.html" class="current">CONTACT</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Quote Builder</h1>
+        <h1>Contact</h1>
+        <h2>- Quote Builder -</h2>
         <section class="form">
             <!-- Form -->
             <div class="form-wrap">
@@ -85,16 +86,16 @@
                         <legend>Project Type</legend>
                         <div class="two-rows">
                             <label>
-                                <input type="checkbox" name="project-type" value="web-design">
                                 Personal Website
+                                <input type="checkbox" name="project-type" value="web-design">
                             </label><br>
                             <label>
-                                <input type="checkbox" name="project-type" value="web-design">
                                 Business Website
+                                <input type="checkbox" name="project-type" value="web-design">
                             </label><br>
                             <label>
-                                <input type="checkbox" name="project-type" value="web-design">
                                 E-commerce Website
+                                <input type="checkbox" name="project-type" value="web-design">
                             </label><br>
                         </div>
                     </fieldset>
@@ -103,16 +104,16 @@
                         <legend>Number of Pages</legend>
                         <div class="two-rows">
                             <label>
-                                <input type="checkbox" name="pages" value="web-design">
                                 1-5 ($500)
+                                <input type="checkbox" name="pages" value="web-design">
                             </label><br>
                             <label>
-                                <input type="checkbox" name="pages" value="web-design">
                                 6-10 ($1,000)
+                                <input type="checkbox" name="pages" value="web-design">
                             </label><br>
                             <label>
-                                <input type="checkbox" name="pages" value="web-design">
                                 11+ (Custom Quote)
+                                <input type="checkbox" name="pages" value="web-design">
                             </label><br>
                         </div>
                     </fieldset>
@@ -121,16 +122,16 @@
                         <legend>Design Complexity</legend>
                         <div class="two-rows">
                             <label>
-                                <input type="checkbox" name="design" value="web-design">
                                 Basic (Template-based) ($300)
+                                <input type="checkbox" name="design" value="web-design">
                             </label><br>
                             <label>
-                                <input type="checkbox" name="design" value="web-design">
                                 Standard (Custom UI) ($600)
+                                <input type="checkbox" name="design" value="web-design">
                             </label><br>
                             <label>
-                                <input type="checkbox" name="design" value="web-design">
                                 Advanced (Fully Custom, Animations) ($1,200)
+                                <input type="checkbox" name="design" value="web-design">
                             </label><br>
                         </div>
                     </fieldset>
@@ -139,16 +140,16 @@
                         <legend>Additional Features</legend>
                         <div class="two-rows">
                             <label>
-                                <input type="checkbox" name="features" value="web-design">
                                 Blog Integration ($300)
+                                <input type="checkbox" name="features" value="web-design">                                
                             </label><br>
                             <label>
-                                <input type="checkbox" name="features" value="web-design">
                                 E-commerce Functionality ($800)
+                                <input type="checkbox" name="features" value="web-design">                                
                             </label><br>
                             <label>
-                                <input type="checkbox" name="features" value="web-design">
                                 Custom Forms ($200)
+                                <input type="checkbox" name="features" value="web-design">                                
                             </label><br>
                         </div>
                     </fieldset>
@@ -157,37 +158,28 @@
                         <legend>Hosting & Maintenance</legend>
                         <div class="two-rows">
                             <label>
-                                <input type="checkbox" name="features" value="web-design">
-                                Blog Integration ($300)
+                                Hosting Setup ($100)
+                                <input type="checkbox" name="maintenance" value="web-design">                                
                             </label><br>
                             <label>
-                                <input type="checkbox" name="features" value="web-design">
-                                E-commerce Functionality ($800)
+                                Maintenance ($50/hour)
+                                <input type="checkbox" name="maintenance" value="web-design">                                
                             </label><br>
                             <label>
-                                <input type="checkbox" name="features" value="web-design">
-                                Custom Forms ($200)
-                            </label><br>
+                                Existing Website Modifications/Facelift ($75/hour)
+                                <input type="checkbox" name="maintenance" value="web-design">
+                            </label>
                         </div>
                     </fieldset>
 
                     <fieldset>
-                        <legend>Membership Details</legend>
-                        <label>Membership Level
-                            <select name="membershipLevel" required title="Select membership level">
-                                <option value="" disabled selected>Choose a level</option>
-                                <option value="NP">NP Membership - $0</option>
-                                <option value="Bronze">Bronze Membership - $50</option>
-                                <option value="Silver">Silver Membership - $150</option>
-                                <option value="Gold">Gold Membership - $450</option>
-                            </select>
-                        </label>
-                        <label>Organization Description
-                            <textarea name="orgDescription" title="Describe your organization"></textarea>
+                        <legend>Other Details</legend>
+                            <label id="comments">Comments
+                            <textarea name="comments" title="Anything else you want me to know:"></textarea>
                         </label>
                     </fieldset>
 
-                    <input type="submit" value="Become a Member">
+                    <input type="submit" value="Get My Quote">
                 </form>
             </div>
 

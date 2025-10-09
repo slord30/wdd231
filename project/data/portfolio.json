@@ -1,0 +1,164 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Dental Website",
+            "client": "Lord Family Dentistry",
+            "category": "Web Design",
+            "description": "A sleek, responsive business website with a focus on professional branding and accessibility.",
+            "image": "images/portfolio/lord-family-dentistry.webp"
+        },
+        {
+            "id": 2,
+            "title": "Album Cover",
+            "client": "Glenn Miller Band",
+            "category": "Graphic Design",
+            "description": "Vintage-inspired album artwork capturing the timeless style of classic jazz.",
+            "image": "images/portfolio/album-cover.webp"
+        },
+        {
+            "id": 3,
+            "title": "Food Logo",
+            "client": "Aunt Misty's",
+            "category": "Web Design",
+            "description": "A warm, nostalgic logo designed to reflect homemade quality and comfort.",
+            "image": "images/portfolio/aunt-misty.webp"
+        },
+        {
+            "id": 4,
+            "title": "Business Logo",
+            "client": "DX Data Exchange",
+            "category": "Graphic Design",
+            "description": "A clean, modern logo emphasizing innovation, connectivity, and technology.",
+            "image": "images/portfolio/data-exchange-logo.webp"
+        },
+        {
+            "id": 5,
+            "title": "Poster Design",
+            "client": "Public Theatre",
+            "category": "Graphic Design",
+            "description": "A bold, dramatic poster layout capturing the emotion and energy of the performance.",
+            "image": "images/portfolio/romeo-juliet.webp"
+        },
+        {
+            "id": 6,
+            "title": "T-shirt Design",
+            "client": "College Park Ward",
+            "category": "Graphic Design",
+            "description": "A playful and faith-centered design created for a community event shirt.",
+            "image": "images/portfolio/sailboat-tshirt.webp"
+        },
+        {
+            "id": 7,
+            "title": "Business Logo",
+            "client": "Creative Arts Academy",
+            "category": "Graphic Design",
+            "description": "A vibrant and artistic logo symbolizing creativity and growth in education.",
+            "image": "images/portfolio/creative-arts-logo.webp"
+        },
+        {
+            "id": 8,
+            "title": "Business Logo",
+            "client": "Lakeview Dezigns",
+            "category": "Graphic Design",
+            "description": "A clean, professional logo designed to convey creativity and modern aesthetics.",
+            "image": "images/portfolio/lakeview-logo.webp"
+        },
+        {
+            "id": 9,
+            "title": "Poster Design",
+            "client": "Public Theatre",
+            "category": "Graphic Design",
+            "description": "An expressive poster design showcasing bold color and visual storytelling.",
+            "image": "images/portfolio/romeo-juliet-poster.webp"
+        },
+        {
+            "id": 10,
+            "title": "Business Logo",
+            "client": "Stargaze Dome",
+            "category": "Brand Identity",
+            "description": "A sleek, celestial-themed logo designed to reflect curiosity and exploration.",
+            "image": "images/portfolio/stargaze-logo.webp"
+        },
+        {
+            "id": 11,
+            "title": "Food Logo",
+            "client": "Cocinando Rico",
+            "category": "UI/UX Design",
+            "description": "A lively and flavorful brand identity inspired by authentic Latin cuisine.",
+            "image": "images/portfolio/cocinando-rico-logo.webp"
+        },
+        {
+            "id": 12,
+            "title": "Graphics",
+            "client": "Cityscape",
+            "category": "Graphic Design",
+            "description": "Modern urban-inspired illustrations created for print and digital campaigns.",
+            "image": "images/portfolio/cityscape.webp"
+        },
+        {
+            "id": 13,
+            "title": "Business Website",
+            "client": "DX Data Exchange",
+            "category": "Web Design",
+            "description": "A modern, responsive business website focused on clarity, usability, and trust.",
+            "image": "images/portfolio/data-exchange.webp"
+        },
+        {
+            "id": 14,
+            "title": "Pin Design",
+            "client": "Collectors Piin",
+            "category": "Graphic Design",
+            "description": "A detailed enamel pin design highlighting creativity and collectible artistry.",
+            "image": "images/portfolio/pin-card.webp"
+        },
+        {
+            "id": 15,
+            "title": "Business Website",
+            "client": "City of Conroe Commerce",
+            "category": "Web Development",
+            "description": "A dynamic municipal website designed for accessibility and community engagement.",
+            "image": "images/portfolio/commerce-site.webp"
+        },
+        {
+            "id": 16,
+            "title": "School Logo",
+            "client": "Traditions School",
+            "category": "Graphic Design",
+            "description": "A professional school logo emphasizing tradition, excellence, and learning.",
+            "image": "images/portfolio/traditions-logo.webp"
+        },
+        {
+            "id": 17,
+            "title": "Playing Cards Design",
+            "client": "Playing Cards",
+            "category": "Graphic Design",
+            "description": "An elegant and creative deck design showcasing intricate patterns and style.",
+            "image": "images/portfolio/playing-card.webp"
+        },
+        {
+            "id": 18,
+            "title": "Business Logo",
+            "client": "Stargaze Dome",
+            "category": "Graphic Design",
+            "description": "A refined logo system designed to unify the brand across digital and print platforms.",
+            "image": "images/portfolio/stargaze-dome-logo.webp"
+        },
+        {
+            "id": 19,
+            "title": "Graphics",
+            "client": "Halloween Background",
+            "category": "Graphic Design",
+            "description": "A festive Halloween illustration featuring detailed artwork and atmosphere.",
+            "image": "images/portfolio/halloween.webp"
+        },
+        {
+            "id": 20,
+            "title": "Business Logo",
+            "client": "Bitcoin",
+            "category": "Graphic Design",
+            "description": "A modern and minimalist logo capturing innovation and digital finance identity.",
+            "image": "images/portfolio/bitcoin-logo.webp"
+        }
+    ]
+}

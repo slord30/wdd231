@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Lord | Web & Graphic Design</title>
+    <meta name="description" content="Website for Sarah Lord Web & Graphic Design">
+    <meta name="author" content="Sarah Lord">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Sarah Lord Designs - Web & Graphic Design" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://slord30.github.io/wdd231/project/index.html" />
+    <meta property="og:description"
+        content="Welcome to Sarah Lord Designs! I create thoughtful, modern websites and graphics that reflect your brand’s story and connect with your audience." />
+    <meta property="og:image" content="https://slord30.github.io/wdd231/project/images/logo-color.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Sarah Lord Web & Graphic Design logo" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Meow+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <!-- Scripts -->
+    <script defer src="scripts/nav.js"></script>
+    <script defer src="scripts/portfolio.js"></script>
+    <script defer src="scripts/footer.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+    <header id="home"> <!--header id=home to scroll to home section when selected in menu-->
+        <nav id="nav">
+            <a aria-label="click to go to home page" href="index.html">
+                <img src="images/logo-white.png" alt="Sarah Lord Designs" class="logo" width="2131" height="595"
+                    decoding="async" loading="lazy">
+            </a>
+            <button type="button" id="menu" title="Title"></button>
+            <ul class="navigation">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="portfolio.html" class="current">PORTFOLIO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Portfolio</h1>
+        <section id="portfolio">
+            <h2>- My Designs -</h2>
+            <div class="portfolio-container">
+                <p>Loading designs...</p>
+            </div>
+        </section>
+    </main>
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+    <footer>
+        <div class="info">
+            <p><strong>Sarah Lord Designs</strong></p>
+            <p>(801) 573-0983</p>
+            <a href="mailto:codeandvector@gmail.com" aria-label="Send an email to Code and Vector">
+                <img src="images/email.svg" alt="Email Sarah Lord" width="35" class="em">
+            </a>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/slord30/" target="_blank"><img src="images/linkedin-circle.svg"
+                    alt="LinkedIn" width="512" height="512" loading="lazy"></a>
+            <a href="https://www.facebook.com/sllord79" target="_blank"><img src="images/facebook.svg" alt="Facebook"
+                    width="512" height="512" loading="lazy"></a>
+            <a href="https://www.instagram.com/sarahllord/" target="_blank"><img src="images/instagram-circle.svg"
+                    alt="Instagram" width="512" height="512" loading="lazy"></a>
+        </div>
+        <div class="date">
+            <p id="copyright">
+                <span id="currentYear"></span>
+                <span id="name"> | Sarah Lord | </span>
+                <span id="country"> USA</span>
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

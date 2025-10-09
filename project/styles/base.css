@@ -51,19 +51,15 @@ a, p, nav {
     text-align: center;
 }
 
-.content h1 {
-    font-size: 70px;
-    color: #fff;
-    font-weight: 600;
-    transition: 0.5s;
+h1#top {
+    font-size: 3rem;
 }
 
-.content h2 {
-    font-size: 50px;
+.content h1 {
+    font-size: 4rem;
     color: #fff;
     font-weight: 600;
     transition: 0.5s;
-    /*transition from solid to outline when hovering at a slower rate*/
 }
 
 .content h1:hover {
@@ -119,8 +115,7 @@ a, p, nav {
 
 /************sections**************/
 #home,
-#about,
-#contact {
+#about {
     height: 100vh;
 }
 
@@ -151,13 +146,6 @@ a, p, nav {
     z-index: 0;
 }
 
-#about h2 {
-    color: var(--primary);
-    font-size: 2rem;
-    -webkit-text-stroke: 1px #fff;
-}
-
-
 
 /*This is what gives the smoke color*/
 .about-overlay {
@@ -183,9 +171,9 @@ a, p, nav {
     transform: translateY(-50%);
 }
 
-#about h1 {
+#about h2 {
     color: #fff;
-    font-size: 3.5rem;
+    font-size: 3rem;
     /*create animation for "welcome"*/
     -webkit-text-stroke: 1px #fff;
     /*can remove this is you want text to disappear entirely*/
@@ -196,6 +184,14 @@ a, p, nav {
     background-position: -700px, 0;
     animation: backcolor 5s linear infinite alternate;
 }
+
+#about h3 {
+    color: var(--primary);
+    font-size: 2rem;
+    -webkit-text-stroke: 1px #fff;
+    font-family: var(--font-heading);
+}
+
 
 .welcome a {
     display: inline-block;
@@ -226,59 +222,83 @@ a, p, nav {
 
 
 
-/****************contact section******************/
-#contact {
-    width: 100%;
-    background: linear-gradient(to top, #EB4607, #8500EB);
-    /* sky to water */
+/****************SPOTLIGHT SECTION******************/
+/* CONTACT / SPOTLIGHT SECTION */
+#spotlight {
+  width: 100%;
+  min-height: 100vh; /* ensures it stretches fully */
+  background: linear-gradient(to top, #EB4607, #8500EB);
+  padding: 5rem 1rem 0 1rem;
+  position: relative;
+  overflow: hidden;
 }
 
-article#contact {
-    padding-top: 15rem;
-    text-align: left;
+#spotlight h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: var(--font-heading);
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
-#contact h1 {
-    color: #fff;
-    font-size: 2.5rem;
-    padding-left: 8%;
-    font-weight: 400;
+/* SPOTLIGHT GRID */
+#spotlight-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding-bottom: 8rem; /* ensures space before wave/footer */
 }
 
-.wave-container {
-    height: 100vh;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    line-height: 0;
-    z-index: 1;
+/* SPOTLIGHT CARD */
+.spotlight-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-.wave-container svg {
-    position: relative;
-    display: block;
-    width: 200%;
-    height: 100%;
+.spotlight-card:hover {
+  transform: translateY(-5px);
 }
 
-.wave-container .wave {
-    animation: wave-animation 10s linear infinite alternate;
+.spotlight-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
 }
 
-@keyframes wave-animation {
-    0% {
-        transform: translateX(0);
+/* Show only 3 cards on screens ≤ 503px */
+@media (max-width: 503px) {
+    #spotlight-cards > .spotlight-card:nth-child(n+4) {
+        display: none;
     }
-
-    100% {
-        transform: translateX(-50%);
-    }
 }
+
+
+/* WAVE AT BOTTOM */
+.wave-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+}
+
+.wave-svg path {
+  fill: #fff; /* matches footer background */
+}
+
 
 /***************FOOTER******************/
 
 footer {
-    
+  background: #fff;
+  color: #000;
+  padding: 2rem;
+  text-align: center;
 }
-
