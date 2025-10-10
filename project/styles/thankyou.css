@@ -63,6 +63,12 @@ strong {
     margin-right: 1rem;
 }
 
+p#total {
+    margin-top: 1.5rem;
+    border-top: solid 1px #fff;
+    font-size: 1.5rem;
+}
+
 footer {
     background-color: #fff;
 }
