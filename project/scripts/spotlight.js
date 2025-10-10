@@ -1,33 +1,35 @@
-const url = "data/portfolio.json";
-const spotlightSection = document.querySelector("#spotlight-cards");
 
-async function getPortfolioData() {
-    try {
-        const response = await fetch(url);
-        if (!response.ok) throw new Error("Failed to fetch portfolio data");
+export function initSpotlight() {
+    const url = "data/portfolio.json";
+    const spotlightSection = document.querySelector("#spotlight-cards");
 
-        const data = await response.json();
-        displayDesigns(data.projects);
-    } catch (error) {
-        console.error(error);
-        spotlightSection.innerHTML = "<p>Sorry, we couldn't load the designs.</p>";
+    async function getPortfolioData() {
+        try {
+            const response = await fetch(url);
+            if (!response.ok) throw new Error("Failed to fetch portfolio data");
+
+            const data = await response.json();
+            displayDesigns(data.projects);
+        } catch (error) {
+            console.error(error);
+            spotlightSection.innerHTML = "<p>Sorry, we couldn't load the designs.</p>";
+        }
     }
-}
 
-function shuffle(array) {
-    return array.sort(() => Math.random() - 0.5);
-}
+    function shuffle(array) {
+        return array.sort(() => Math.random() - 0.5);
+    }
 
-function displayDesigns(designs) {
-    spotlightSection.innerHTML = "";
+    function displayDesigns(designs) {
+        spotlightSection.innerHTML = "";
 
-    const spotlightDesigns = shuffle(designs).slice(0, 6);
+        const spotlightDesigns = shuffle(designs).slice(0, 6);
 
-    spotlightDesigns.forEach(design => {
-        const card = document.createElement("div");
-        card.classList.add("spotlight-card");
+        spotlightDesigns.forEach(design => {
+            const card = document.createElement("div");
+            card.classList.add("spotlight-card");
 
-        card.innerHTML = `
+            card.innerHTML = `
             <a href="portfolio.html" class="spotlight-link">
                 <picture class="spotlight-logo">
                     <source srcset="${design.image}" media="(max-width: 400px)">
@@ -39,8 +41,9 @@ function displayDesigns(designs) {
         `;
 
 
-        spotlightSection.appendChild(card);
-    });
-}
+            spotlightSection.appendChild(card);
+        });
+    }
 
-getPortfolioData();
+    getPortfolioData();
+}
